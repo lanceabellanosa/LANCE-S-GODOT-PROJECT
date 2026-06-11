@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dpvtwaj1jovrb"]
 
 [ext_resource type="Script" uid="uid://ccakgjext8n27" path="res://scripts/player.gd" id="1_nnsk1"]
+[ext_resource type="Texture2D" uid="uid://x8qyb4rvtjrb" path="res://textures/WoodFloor028_1K-JPG_Color.jpg" id="2_rwgxs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rwgxs"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -17,13 +18,11 @@ glow_enabled = true
 volumetric_fog_enabled = true
 volumetric_fog_emission = Color(0.25882354, 0.25882354, 0.25882354, 1)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nnsk1"]
-data = PackedVector3Array(-25, -0.25, 25, -25, -0.25, -25, -25, 0.25, -25, 25, -0.25, -25, -25, -0.25, -25, -25, -0.25, 25, -25, 0.25, -25, -25, -0.25, -25, 25, -0.25, -25, -25, 0.25, -25, -25, 0.25, 25, -25, -0.25, 25, -25, -0.25, 25, -25, 0.25, 25, 25, 0.25, 25, 25, 0.25, 25, -25, 0.25, 25, -25, 0.25, -25, -25, -0.25, 25, 25, -0.25, 25, 25, -0.25, -25, 25, 0.25, 25, 25, -0.25, 25, -25, -0.25, 25, 25, -0.25, -25, 25, -0.25, 25, 25, 0.25, 25, 25, -0.25, -25, 25, 0.25, -25, -25, 0.25, -25, -25, 0.25, -25, 25, 0.25, -25, 25, 0.25, 25, 25, 0.25, 25, 25, 0.25, -25, 25, -0.25, -25)
-
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_71j4m"]
+height = 3.93
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qfnet"]
-points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rwgxs"]
+points = PackedVector3Array(0.48526955, 1.5441561, 0.084717125, -0.5311904, 1.5592794, -0.21925513, 0.2172466, -1.5592794, -0.5311904, 0.34202072, -1.5592794, 0.46679482, -0.34402925, 1.5592794, 0.46679482, 0.2172466, 1.5592794, -0.5311904, -0.34402925, -1.5592794, -0.46880335, 0.46679482, -1.5592794, -0.34402925, -0.4064163, -1.621807, 0.40440777, 0.40440777, 1.621807, 0.40440777, -0.21925513, 1.5592794, -0.5311904, 0.08836628, -1.9084535, -0.20966025, -0.09035249, 1.9080746, -0.2096188, -0.5311904, 1.5592794, 0.2172466, 0.46679482, -1.5592794, 0.34202072, 0.46679482, 1.5592794, -0.34402925, -0.5311904, -1.5592794, -0.21925513, 0.08840372, 1.9092534, 0.20774372, -0.090389974, -1.9088745, 0.20770231, -0.5311904, -1.5592794, 0.2172466, 0.34202072, 1.5592794, 0.46679482, -0.086676925, -1.543434, 0.48504218, -0.21925513, -1.5592794, -0.5311904, -0.46880335, 1.5592794, -0.34402925, 0.32413772, 1.8328396, -0.08960435, 0.32421052, -1.83325, 0.08762107, -0.2096188, -1.9080746, -0.09035249, -0.20966025, 1.9084535, 0.08836628, 0.34202072, 1.5592794, -0.46880335, 0.08471707, 1.5441552, 0.48526928, 0.48504248, -1.543435, -0.08667698, 0.46679482, 1.5592794, 0.34202072)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nnsk1"]
 albedo_color = Color(0.45291126, 0.48340923, 0.46303958, 1)
@@ -31,7 +30,16 @@ emission_enabled = true
 emission = Color(0.25882354, 0.25882354, 0.25882354, 1)
 emission_energy_multiplier = 3.0
 
-[node name="Floor Five" type="Node3D" unique_id=27969865]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4wyf3"]
+albedo_texture = ExtResource("2_rwgxs")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nnsk1"]
+data = PackedVector3Array(-20, -0.25, 20, -20, -0.25, -20, -20, 0.25, -20, 20, -0.25, -20, -20, -0.25, -20, -20, -0.25, 20, -20, 0.25, -20, -20, -0.25, -20, 20, -0.25, -20, -20, 0.25, -20, -20, 0.25, 20, -20, -0.25, 20, -20, -0.25, 20, -20, 0.25, 20, 20, 0.25, 20, 20, 0.25, 20, -20, 0.25, 20, -20, 0.25, -20, -20, -0.25, 20, 20, -0.25, 20, 20, -0.25, -20, 20, 0.25, 20, 20, -0.25, 20, -20, -0.25, 20, 20, -0.25, -20, 20, -0.25, 20, 20, 0.25, 20, 20, -0.25, -20, 20, 0.25, -20, -20, 0.25, -20, -20, 0.25, -20, 20, 0.25, -20, 20, 0.25, 20, 20, 0.25, 20, 20, 0.25, -20, 20, -0.25, -20)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4wyf3"]
+data = PackedVector3Array(-0.5, -2, 12, -0.5, -2, -12, -0.5, 2, -12, 0.5, -2, -12, -0.5, -2, -12, -0.5, -2, 12, -0.5, 2, -12, -0.5, -2, -12, 0.5, -2, -12, -0.5, 2, -12, -0.5, 2, 12, -0.5, -2, 12, -0.5, -2, 12, -0.5, 2, 12, 0.5, 2, 12, 0.5, 2, 12, -0.5, 2, 12, -0.5, 2, -12, -0.5, -2, 12, 0.5, -2, 12, 0.5, -2, -12, 0.5, 2, 12, 0.5, -2, 12, -0.5, -2, 12, 0.5, -2, -12, 0.5, -2, 12, 0.5, 2, 12, 0.5, -2, -12, 0.5, 2, -12, -0.5, 2, -12, -0.5, 2, -12, 0.5, 2, -12, 0.5, 2, 12, 0.5, 2, 12, 0.5, 2, -12, 0.5, -2, -12)
+
+[node name="Floor 5" type="Node3D" unique_id=27969865]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=866956028]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25000003, -0.36633682, 0.88979524, 0.27214292, -0.34029016, 0.14409845, -0.9292138, 0, 8.299008, 0)
@@ -41,30 +49,52 @@ sky_mode = 1
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2031102771]
 environment = SubResource("Environment_k0juu")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=216491172]
-size = Vector3(50, 0.5, 50)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="CSGBox3D" unique_id=818756721]
-
-[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="CSGBox3D/StaticBody3D" unique_id=225544495]
-shape = SubResource("ConcavePolygonShape3D_nnsk1")
-
 [node name="player" type="CharacterBody3D" parent="." unique_id=1572183189]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3535521, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1474586, 15)
 script = ExtResource("1_nnsk1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="player" unique_id=1366885302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
 mesh = SubResource("CapsuleMesh_71j4m")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="player" unique_id=1593264919]
-shape = SubResource("ConvexPolygonShape3D_qfnet")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player" unique_id=1080958174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+shape = SubResource("ConvexPolygonShape3D_rwgxs")
 
 [node name="head" type="Node3D" parent="player" unique_id=817132030]
 
 [node name="Camera3D" type="Camera3D" parent="player/head" unique_id=742072161]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6550684, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3908288, -0.18248653)
 
 [node name="Moon" type="CSGSphere3D" parent="." unique_id=917903440]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 97, -253)
-radius = 50.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 584, 615, -2241)
+radius = 147.0
 material = SubResource("StandardMaterial3D_nnsk1")
+
+[node name="Hallway" type="Node3D" parent="." unique_id=299053612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 584, 615, -2241)
+
+[node name="Floor" type="CSGBox3D" parent="Hallway" unique_id=216491172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+size = Vector3(40, 0.5, 40)
+material = SubResource("StandardMaterial3D_4wyf3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Floor" unique_id=894263278]
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="Hallway/Floor/StaticBody3D" unique_id=235029361]
+shape = SubResource("ConcavePolygonShape3D_nnsk1")
+
+[node name="Walls" type="Node3D" parent="." unique_id=1592653400]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls" unique_id=142459439]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1, 2.2316756, 4.5)
+size = Vector3(1, 4, 24)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Walls/CSGBox3D" unique_id=1317370343]
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="Walls/CSGBox3D/StaticBody3D" unique_id=2126540176]
+shape = SubResource("ConcavePolygonShape3D_4wyf3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Walls" unique_id=1679433094]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.492955, 2.2381697, -1.2473145)
+size = Vector3(1, 4, 12.505371)
