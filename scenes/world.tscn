@@ -260,3 +260,6 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.463988, 0.54455566, 
 
 [node name="Door6" parent="Doors" unique_id=1881920663 instance=ExtResource("4_k0juu")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.6576686, 0.54455566, -22.510406)
+
+[node name="Door7" parent="Doors" unique_id=665943490 instance=ExtResource("4_k0juu")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 18.837408, 0.54455566, -17.09575)
