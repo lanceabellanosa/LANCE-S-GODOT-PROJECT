@@ -75,6 +75,26 @@ data = PackedVector3Array(-0.5, -2, 8.504202, -0.5, -2, -8.504202, -0.5, 2, -8.5
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7r4gi"]
 data = PackedVector3Array(-0.5, -2, 8.974287, -0.5, -2, -8.974287, -0.5, 2, -8.974287, 0.5, -2, -8.974287, -0.5, -2, -8.974287, -0.5, -2, 8.974287, -0.5, 2, -8.974287, -0.5, -2, -8.974287, 0.5, -2, -8.974287, -0.5, 2, -8.974287, -0.5, 2, 8.974287, -0.5, -2, 8.974287, -0.5, -2, 8.974287, -0.5, 2, 8.974287, 0.5, 2, 8.974287, 0.5, 2, 8.974287, -0.5, 2, 8.974287, -0.5, 2, -8.974287, -0.5, -2, 8.974287, 0.5, -2, 8.974287, 0.5, -2, -8.974287, 0.5, 2, 8.974287, 0.5, -2, 8.974287, -0.5, -2, 8.974287, 0.5, -2, -8.974287, 0.5, -2, 8.974287, 0.5, 2, 8.974287, 0.5, -2, -8.974287, 0.5, 2, -8.974287, -0.5, 2, -8.974287, -0.5, 2, -8.974287, 0.5, 2, -8.974287, 0.5, 2, 8.974287, 0.5, 2, 8.974287, 0.5, 2, -8.974287, 0.5, -2, -8.974287)
 
+[sub_resource type="BoxMesh" id="BoxMesh_k0juu"]
+size = Vector3(2, 2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7r4gi"]
+albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7r4gi"]
+material = SubResource("StandardMaterial3D_7r4gi")
+size = Vector3(0.5, 2.5, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4mrxx"]
+albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w7kh3"]
+material = SubResource("StandardMaterial3D_4mrxx")
+size = Vector3(0.5, 2.5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e3hyu"]
+size = Vector3(2.9892578, 2.5361938, 2.5073242)
+
 [node name="Floor 5" type="Node3D" unique_id=27969865]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=866956028]
@@ -86,7 +106,7 @@ sky_mode = 1
 environment = SubResource("Environment_k0juu")
 
 [node name="player" type="CharacterBody3D" parent="." unique_id=1572183189]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4285998, 14.4630165)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.650875, 10.780979)
 script = ExtResource("1_nnsk1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="player" unique_id=1366885302]
@@ -277,6 +297,42 @@ transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5
 transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5, -8.614477, 0.54455566, 5.0418615)
 
 [node name="Label" type="Label" parent="." unique_id=187869392]
-offset_right = 132.0
-offset_bottom = 23.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 136.0
+offset_bottom = 31.0
 text = "WASD to move"
+
+[node name="Label2" type="Label" parent="." unique_id=620480359]
+offset_left = 600.0
+offset_top = 8.0
+offset_right = 1144.0
+offset_bottom = 31.0
+text = "Task: Find one anomaly in all five hallways in order to escape the hotel"
+
+[node name="Elevator" type="Node3D" parent="." unique_id=403803290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15.921929)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Elevator" unique_id=15286802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5024123, -0.11196518)
+mesh = SubResource("BoxMesh_k0juu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Elevator" unique_id=127786455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2271627, 1.7807279, -0.5498009)
+mesh = SubResource("BoxMesh_7r4gi")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Elevator" unique_id=478326164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2661626, 1.7807279, -0.5498009)
+mesh = SubResource("BoxMesh_7r4gi")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Elevator" unique_id=508716468]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.05021608, 2.779172, -0.5498009)
+mesh = SubResource("BoxMesh_w7kh3")
+
+[node name="Area3D" type="Area3D" parent="Elevator" unique_id=252328897]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Elevator/Area3D" unique_id=1195954866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0063476563, 1.8002102, -0.7536621)
+shape = SubResource("BoxShape3D_e3hyu")
+
+[connection signal="body_entered" from="Elevator/Area3D" to="player" method="_on_area_3d_body_entered"]

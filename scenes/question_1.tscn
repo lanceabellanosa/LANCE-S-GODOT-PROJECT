@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://smncktxf54ec"]
+
+[ext_resource type="Script" uid="uid://56xhvysgmqqa" path="res://scripts/question_1.gd" id="1_jspf7"]
+
+[node name="Question 1" type="Node2D" unique_id=1607478674]
+script = ExtResource("1_jspf7")
+
+[node name="Label" type="Label" parent="." unique_id=1799999668]
+offset_left = 64.0
+offset_top = 176.0
+offset_right = 1088.0
+offset_bottom = 224.0
+text = "Have you found an anomaly in Floor 5?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1354886681]
+offset_left = 336.0
+offset_top = 320.0
+offset_right = 432.0
+offset_bottom = 344.0
+text = "Yes"
+
+[node name="Button2" type="Button" parent="." unique_id=1127304459]
+offset_left = 720.0
+offset_top = 320.0
+offset_right = 816.0
+offset_bottom = 351.0
+text = "No"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
