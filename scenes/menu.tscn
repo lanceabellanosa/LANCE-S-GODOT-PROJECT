@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c7asegul31it1"]
+
+[ext_resource type="Script" uid="uid://bh1yq66pbqq01" path="res://scripts/menu.gd" id="1_yqeox"]
+
+[node name="Menu" type="Node2D" unique_id=1589856008]
+script = ExtResource("1_yqeox")
+
+[node name="Button" type="Button" parent="." unique_id=1255383464]
+offset_left = 448.0
+offset_top = 384.0
+offset_right = 704.0
+offset_bottom = 448.0
+text = "Play Now"
+
+[node name="Label" type="Label" parent="." unique_id=1106585095]
+offset_left = 8.0
+offset_top = 64.0
+offset_right = 1144.0
+offset_bottom = 320.0
+text = "The Five Anomaly Floors"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

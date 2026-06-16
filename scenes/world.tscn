@@ -272,3 +272,6 @@ transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-
 
 [node name="Door10" parent="Doors" unique_id=1159759115 instance=ExtResource("4_k0juu")]
 transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5, 13.969175, 0.54455566, 15.575274)
+
+[node name="Door11" parent="Doors" unique_id=704201722 instance=ExtResource("4_k0juu")]
+transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5, -8.614477, 0.54455566, 5.0418615)
