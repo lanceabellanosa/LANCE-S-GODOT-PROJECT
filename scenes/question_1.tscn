@@ -5,9 +5,6 @@
 [node name="Question 1" type="Node2D" unique_id=1607478674]
 script = ExtResource("1_jspf7")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1045289645]
-position = Vector2(576, 328)
-
 [node name="Label" type="Label" parent="." unique_id=1799999668]
 offset_left = 64.0
 offset_top = 176.0
