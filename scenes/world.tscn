@@ -28,7 +28,6 @@ points = PackedVector3Array(0.48526955, 1.5441561, 0.084717125, -0.5311904, 1.55
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nnsk1"]
 albedo_color = Color(0.45291126, 0.48340923, 0.46303958, 1)
-emission_enabled = true
 emission = Color(0.25882354, 0.25882354, 0.25882354, 1)
 emission_energy_multiplier = 3.0
 
