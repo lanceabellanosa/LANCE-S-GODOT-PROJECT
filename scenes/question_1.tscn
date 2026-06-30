@@ -16,10 +16,10 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_uvbed"]
-size = Vector3(30, 0.5, 30)
+size = Vector3(20, 0.5, 10)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jspf7"]
-points = PackedVector3Array(-15, -0.25, -15, -15, 0.25, -15, 14.999998, -0.25, -15, -15, -0.25, 14.999998, -15, 0.25, 14.999998, 14.999998, 0.25, -15, 14.999998, -0.25, 14.999998, 14.999998, 0.25, 14.999998)
+[sub_resource type="BoxShape3D" id="BoxShape3D_2pex0"]
+size = Vector3(20, 0.5, 10)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_1c0pd"]
 height = 3.93
@@ -41,6 +41,7 @@ size = Vector3(10, 1, 11)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1400017]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_color = Color(0, 0, 0, 1)
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1374096769]
@@ -52,10 +53,10 @@ mesh = SubResource("BoxMesh_uvbed")
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=719876300]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1366228601]
-shape = SubResource("ConvexPolygonShape3D_jspf7")
+shape = SubResource("BoxShape3D_2pex0")
 
 [node name="player2" type="CharacterBody3D" parent="." unique_id=2091384423]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6509495, 11.395842)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6509495, 2.0502052)
 script = ExtResource("1_jspf7")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="player2" unique_id=2061529851]
@@ -82,7 +83,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="No" type="MeshInstance3D" parent="." unique_id=294137941]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.864037, 0, -20.132702)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.127548, 0, -10.664907)
 mesh = SubResource("BoxMesh_1c0pd")
 
 [node name="Area3D" type="Area3D" parent="No" unique_id=419799862]
