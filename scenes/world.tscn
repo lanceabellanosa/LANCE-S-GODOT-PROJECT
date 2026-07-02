@@ -9,12 +9,12 @@
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 
-[sub_resource type="Sky" id="Sky_71j4m"]
+[sub_resource type="Sky" id="Sky_k0juu"]
 sky_material = SubResource("ProceduralSkyMaterial_k0juu")
 
 [sub_resource type="Environment" id="Environment_qfnet"]
 background_mode = 2
-sky = SubResource("Sky_71j4m")
+sky = SubResource("Sky_k0juu")
 sky_custom_fov = 59.4
 glow_enabled = true
 fog_enabled = true
@@ -91,22 +91,30 @@ size = Vector3(1, 4, 17.94)
 [sub_resource type="BoxMesh" id="BoxMesh_k0juu"]
 size = Vector3(2, 2, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7r4gi"]
-albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_7r4gi"]
-material = SubResource("StandardMaterial3D_7r4gi")
-size = Vector3(0.5, 2.5, 1)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4mrxx"]
 albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_w7kh3"]
+[sub_resource type="BoxMesh" id="BoxMesh_7r4gi"]
 material = SubResource("StandardMaterial3D_4mrxx")
+size = Vector3(0.5, 2.5, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7r4gi"]
+albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w7kh3"]
+material = SubResource("StandardMaterial3D_7r4gi")
 size = Vector3(0.5, 2.5, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3hyu"]
 size = Vector3(0.9925537, 1.8051796, 0.43652344)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7kh3"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_e3hyu"]
+material = SubResource("StandardMaterial3D_w7kh3")
+text = "5"
+font_size = 127
 
 [node name="Floor 5" type="Node3D" unique_id=27969865]
 
@@ -123,7 +131,7 @@ shadow_enabled = true
 sky_mode = 1
 
 [node name="player" type="CharacterBody3D" parent="." unique_id=1572183189]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6509495, 7.155794)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8711486, 9.451281)
 script = ExtResource("1_nnsk1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="player" unique_id=1366885302]
@@ -351,17 +359,29 @@ offset_bottom = 63.0
 text = "WASD to move"
 
 [node name="Label2" type="Label" parent="." unique_id=620480359]
-offset_left = 600.0
+offset_left = 960.0
 offset_top = 8.0
-offset_right = 1144.0
-offset_bottom = 31.0
-text = "Task: Find one anomaly in all five hallways in order to escape the hotel"
+offset_right = 1145.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 13
+text = "Task: Find one anomaly in all 
+five hallways in order to 
+escape the hotel. 
+Head to the elevator where 
+the arrows pointing if you
+have or haven't found
+anything."
 
 [node name="Label3" type="Label" parent="." unique_id=479735766]
 offset_left = 8.0
-offset_top = 8.0
 offset_right = 552.0
-offset_bottom = 31.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 30
 text = "Floor 5"
+uppercase = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1428256751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65761644, 2.5360255, 5.074716)
+mesh = SubResource("TextMesh_e3hyu")
 
 [connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player" method="_on_area_3d_body_entered"]
