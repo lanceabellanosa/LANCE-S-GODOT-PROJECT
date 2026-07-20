@@ -1,0 +1,403 @@
+[gd_scene format=3 uid="uid://b5pstulxdgige"]
+
+[ext_resource type="Script" uid="uid://dprm4451mcofi" path="res://scripts/player_5.gd" id="1_sq16n"]
+[ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="2_ksuo5"]
+[ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="3_8wtuq"]
+[ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_r4smw"]
+
+[sub_resource type="Environment" id="Environment_ak2bd"]
+background_mode = 2
+sky_custom_fov = 59.4
+ambient_light_source = 2
+ambient_light_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.92099476, 0.9209946, 0.9209946, 1)
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0m77k"]
+albedo_color = Color(0.45215458, 0.48356074, 0.46393156, 1)
+emission = Color(0.25882354, 0.25882354, 0.25882354, 1)
+emission_energy_multiplier = 3.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_j64rs"]
+height = 3.93
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_crqf2"]
+points = PackedVector3Array(0.48526955, 1.5441561, 0.084717125, -0.5311904, 1.5592794, -0.21925513, 0.2172466, -1.5592794, -0.5311904, 0.34202072, -1.5592794, 0.46679482, -0.34402925, 1.5592794, 0.46679482, 0.2172466, 1.5592794, -0.5311904, -0.34402925, -1.5592794, -0.46880335, 0.46679482, -1.5592794, -0.34402925, -0.4064163, -1.621807, 0.40440777, 0.40440777, 1.621807, 0.40440777, -0.21925513, 1.5592794, -0.5311904, 0.08836628, -1.9084535, -0.20966025, -0.09035249, 1.9080746, -0.2096188, -0.5311904, 1.5592794, 0.2172466, 0.46679482, -1.5592794, 0.34202072, 0.46679482, 1.5592794, -0.34402925, -0.5311904, -1.5592794, -0.21925513, 0.08840372, 1.9092534, 0.20774372, -0.090389974, -1.9088745, 0.20770231, -0.5311904, -1.5592794, 0.2172466, 0.34202072, 1.5592794, 0.46679482, -0.086676925, -1.543434, 0.48504218, -0.21925513, -1.5592794, -0.5311904, -0.46880335, 1.5592794, -0.34402925, 0.32413772, 1.8328396, -0.08960435, 0.32421052, -1.83325, 0.08762107, -0.2096188, -1.9080746, -0.09035249, -0.20966025, 1.9084535, 0.08836628, 0.34202072, 1.5592794, -0.46880335, 0.08471707, 1.5441552, 0.48526928, 0.48504248, -1.543435, -0.08667698, 0.46679482, 1.5592794, 0.34202072)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mn01"]
+albedo_texture = ExtResource("2_ksuo5")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hfwcs"]
+size = Vector3(40, 0.5, 40)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yklvg"]
+size = Vector3(40, 0.5, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ewutq"]
+albedo_texture = ExtResource("3_8wtuq")
+albedo_texture_force_srgb = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xbv5b"]
+size = Vector3(1, 4, 26.55)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gsql7"]
+albedo_texture = ExtResource("3_8wtuq")
+albedo_texture_force_srgb = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i72gk"]
+size = Vector3(1, 4, 12.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0gl0"]
+albedo_texture = ExtResource("3_8wtuq")
+albedo_texture_force_srgb = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0l5xy"]
+albedo_texture = ExtResource("3_8wtuq")
+albedo_texture_force_srgb = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_odkpi"]
+size = Vector3(1, 4, 39.98)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nbwy7"]
+size = Vector3(1, 4, 39.98)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_do12l"]
+size = Vector3(1, 4, 39.98)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ncsdd"]
+size = Vector3(1, 4, 39.98)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bep5y"]
+size = Vector3(1, 4, 10.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ro4kn"]
+size = Vector3(1, 4, 6.464)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p2806"]
+size = Vector3(1, 4, 17)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fw663"]
+size = Vector3(1, 4, 17.94)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vb5iy"]
+size = Vector3(2, 2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vae03"]
+albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_eggy4"]
+material = SubResource("StandardMaterial3D_vae03")
+size = Vector3(0.5, 2.5, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ntk7"]
+albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ls883"]
+material = SubResource("StandardMaterial3D_1ntk7")
+size = Vector3(0.5, 2.5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hhyhn"]
+size = Vector3(0.9925537, 1.8051796, 0.43652344)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7kh3"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_l7ts2"]
+material = SubResource("StandardMaterial3D_w7kh3")
+text = "3"
+font_size = 127
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3hyu"]
+albedo_color = Color(3.851815, 3.851815, 3.851815, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_7f30t"]
+material = SubResource("StandardMaterial3D_e3hyu")
+text = "➔"
+font_size = 120
+
+[node name="Floor 3" type="Node3D" unique_id=1653520162]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1296902341]
+environment = SubResource("Environment_ak2bd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=550435805]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+sky_mode = 2
+
+[node name="Moon" type="CSGSphere3D" parent="." unique_id=1359497524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1250.1567, 924.228, -2241)
+radius = 147.0
+material = SubResource("StandardMaterial3D_0m77k")
+
+[node name="player5" type="CharacterBody3D" parent="." unique_id=1584918904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8711486, 9.451281)
+script = ExtResource("1_sq16n")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player5" unique_id=668760951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+mesh = SubResource("CapsuleMesh_j64rs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player5" unique_id=2074684431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+shape = SubResource("ConvexPolygonShape3D_crqf2")
+
+[node name="head" type="Node3D" parent="player5" unique_id=721039902]
+
+[node name="Camera3D" type="Camera3D" parent="player5/head" unique_id=1965138519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3908286, -0.18396854)
+keep_aspect = 0
+
+[node name="Hallway" type="Node3D" parent="." unique_id=439453358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 584, 615, -2241)
+
+[node name="Floor" type="CSGBox3D" parent="Hallway" unique_id=270432925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -583.9513, -614.70544, 2237.5322)
+size = Vector3(40, 0.5, 40)
+material = SubResource("StandardMaterial3D_3mn01")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Floor" unique_id=1800369874]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Floor/StaticBody3D" unique_id=1645211701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10597229, -0.112854004, -0.16436768)
+shape = SubResource("BoxShape3D_hfwcs")
+
+[node name="Roof" type="CSGBox3D" parent="Hallway" unique_id=2068197954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -583.9513, -610.4608, 2237.5322)
+size = Vector3(40, 0.5, 40)
+material = SubResource("StandardMaterial3D_3mn01")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Roof" unique_id=492682216]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Roof/StaticBody3D" unique_id=471412550]
+shape = SubResource("BoxShape3D_yklvg")
+
+[node name="Walls" type="Node3D" parent="Hallway" unique_id=301009611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Hallway/Walls" unique_id=1020419881]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.27661133, 2.2316756, 4.5330563)
+size = Vector3(1, 4, 26.553223)
+material = SubResource("StandardMaterial3D_ewutq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D" unique_id=2133759727]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D/StaticBody3D" unique_id=1002389289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013490677, 0.15551758, -0.017304182)
+shape = SubResource("BoxShape3D_xbv5b")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Hallway/Walls" unique_id=1123854562]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.506133, 2.2381697, -1.2440634)
+calculate_tangents = false
+size = Vector3(1, 4, 12.505371)
+material = SubResource("StandardMaterial3D_gsql7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D2" unique_id=2050204964]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D2/StaticBody3D" unique_id=1241620736]
+shape = SubResource("BoxShape3D_i72gk")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Hallway/Walls" unique_id=1419821482]
+transform = Transform3D(-4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, -4.3711392e-08, 0.07088283, 2.2381697, 15.992056)
+material_override = SubResource("StandardMaterial3D_l0gl0")
+size = Vector3(1, 4, 39.98889)
+material = SubResource("StandardMaterial3D_0l5xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D3" unique_id=1474089068]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D3/StaticBody3D" unique_id=1349332400]
+shape = SubResource("BoxShape3D_odkpi")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Hallway/Walls" unique_id=190467221]
+transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1.0000001, -19.44719, 2.2381697, -4.315668)
+material_override = SubResource("StandardMaterial3D_l0gl0")
+size = Vector3(1, 4, 39.98889)
+material = SubResource("StandardMaterial3D_0l5xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D4" unique_id=1092234949]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D4/StaticBody3D" unique_id=1749248553]
+shape = SubResource("BoxShape3D_nbwy7")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Hallway/Walls" unique_id=1586273229]
+transform = Transform3D(-4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, -4.3711392e-08, 0.061515808, 2.2381697, -22.930628)
+material_override = SubResource("StandardMaterial3D_l0gl0")
+size = Vector3(1, 4, 39.98889)
+material = SubResource("StandardMaterial3D_0l5xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D5" unique_id=910942978]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D5/StaticBody3D" unique_id=873751037]
+shape = SubResource("BoxShape3D_do12l")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Hallway/Walls" unique_id=74609397]
+transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1.0000001, 19.387926, 2.2381697, -4.2497377)
+material_override = SubResource("StandardMaterial3D_l0gl0")
+size = Vector3(1, 4, 39.98889)
+material = SubResource("StandardMaterial3D_0l5xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D6" unique_id=218836872]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D6/StaticBody3D" unique_id=480100121]
+shape = SubResource("BoxShape3D_ncsdd")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Hallway/Walls" unique_id=155435015]
+transform = Transform3D(-4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, -4.3711392e-08, 7.7432127, 2.2381697, -7.0442266)
+material_override = SubResource("StandardMaterial3D_l0gl0")
+size = Vector3(1, 4, 10.495712)
+material = SubResource("StandardMaterial3D_0l5xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D7" unique_id=1366535070]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D7/StaticBody3D" unique_id=1870441724]
+shape = SubResource("BoxShape3D_bep5y")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Hallway/Walls" unique_id=1075165025]
+transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1.0000001, 2.9954026, 2.2381697, -9.713862)
+material_override = SubResource("StandardMaterial3D_l0gl0")
+size = Vector3(1, 4, 6.4635544)
+material = SubResource("StandardMaterial3D_0l5xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D8" unique_id=1676254882]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D8/StaticBody3D" unique_id=1906240504]
+shape = SubResource("BoxShape3D_ro4kn")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Hallway/Walls" unique_id=1961206261]
+transform = Transform3D(-4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, -4.3711392e-08, -5.028415, 2.2381697, -12.505039)
+material_override = SubResource("StandardMaterial3D_l0gl0")
+size = Vector3(1, 4, 17.008404)
+material = SubResource("StandardMaterial3D_0l5xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D9" unique_id=331398276]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D9/StaticBody3D" unique_id=305027368]
+shape = SubResource("BoxShape3D_p2806")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Hallway/Walls" unique_id=694145628]
+transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1.0000001, -13.083018, 2.2381697, -3.985672)
+material_override = SubResource("StandardMaterial3D_l0gl0")
+size = Vector3(1, 4, 17.948574)
+material = SubResource("StandardMaterial3D_0l5xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hallway/Walls/CSGBox3D10" unique_id=346939765]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Walls/CSGBox3D10/StaticBody3D" unique_id=2073152898]
+shape = SubResource("BoxShape3D_fw663")
+
+[node name="Doors" type="Node3D" parent="Hallway" unique_id=302038647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+
+[node name="Door" parent="Hallway/Doors" unique_id=1394904511 instance=ExtResource("4_r4smw")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -17.170887, 0.54455566, 15.599757)
+
+[node name="Door2" parent="Hallway/Doors" unique_id=1956197453 instance=ExtResource("4_r4smw")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -19.049591, 0.54455566, 8.395555)
+
+[node name="Door3" parent="Hallway/Doors" unique_id=167577729 instance=ExtResource("4_r4smw")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -19.049591, 0.54455566, -5.384404)
+
+[node name="Door4" parent="Hallway/Doors" unique_id=1342383611 instance=ExtResource("4_r4smw")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -19.049591, 0.54455566, -17.918045)
+
+[node name="Door5" parent="Hallway/Doors" unique_id=494802680 instance=ExtResource("4_r4smw")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.463988, 0.54455566, -22.510406)
+
+[node name="Door6" parent="Hallway/Doors" unique_id=1535901596 instance=ExtResource("4_r4smw")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.6576686, 0.54455566, -22.510406)
+
+[node name="Door7" parent="Hallway/Doors" unique_id=1340595418 instance=ExtResource("4_r4smw")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 18.837408, 0.54455566, -17.09575)
+
+[node name="Door8" parent="Hallway/Doors" unique_id=1875428181 instance=ExtResource("4_r4smw")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 18.837408, 0.54455566, -2.9795027)
+
+[node name="Door9" parent="Hallway/Doors" unique_id=713564063 instance=ExtResource("4_r4smw")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 18.837408, 0.54455566, 14.512916)
+
+[node name="Door10" parent="Hallway/Doors" unique_id=875486574 instance=ExtResource("4_r4smw")]
+transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5, 13.969175, 0.54455566, 15.575274)
+
+[node name="Door11" parent="Hallway/Doors" unique_id=568679121 instance=ExtResource("4_r4smw")]
+transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5, -8.614477, 0.54455566, 5.0418615)
+
+[node name="Elevator" type="Node3D" parent="Hallway" unique_id=244204375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2256.9219)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Hallway/Elevator" unique_id=1052718343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5024123, -0.11196518)
+mesh = SubResource("BoxMesh_vb5iy")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Hallway/Elevator" unique_id=2119843948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2271627, 1.7807279, -0.5498009)
+mesh = SubResource("BoxMesh_eggy4")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Hallway/Elevator" unique_id=1744377001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2661626, 1.7807279, -0.5498009)
+mesh = SubResource("BoxMesh_eggy4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Hallway/Elevator" unique_id=752471784]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.05021608, 2.779172, -0.5498009)
+mesh = SubResource("BoxMesh_ls883")
+
+[node name="Area3D" type="Area3D" parent="Hallway/Elevator" unique_id=1858627678]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Elevator/Area3D" unique_id=659596930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014831543, 1.9658883, -0.8047037)
+shape = SubResource("BoxShape3D_hhyhn")
+
+[node name="Signs" type="Node3D" parent="Hallway" unique_id=2047863130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+
+[node name="Sign" type="MeshInstance3D" parent="Hallway/Signs" unique_id=697178532]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65761644, 2.5360255, 5.074716)
+mesh = SubResource("TextMesh_l7ts2")
+
+[node name="Arrows" type="Node3D" parent="Hallway" unique_id=1963811037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=806810676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4316378, 2.410929, 15.483801)
+mesh = SubResource("TextMesh_7f30t")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=1823413683]
+transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
+mesh = SubResource("TextMesh_7f30t")
+
+[node name="Label" type="Label" parent="." unique_id=1267830573]
+offset_left = 944.0
+offset_top = 8.0
+offset_right = 1129.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 13
+text = "Task: Find one anomaly in all 
+five hallways in order to 
+escape the hotel. 
+Head to the elevator where 
+the arrows pointing if you
+have or haven't found
+anything."
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="." unique_id=1056286737]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 552.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 30
+text = "Floor 4"
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="." unique_id=64464344]
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 306.0
+offset_bottom = 71.0
+text = "Correct: There is no anomaly in Floor 5"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player5" method="_on_area_3d_body_entered"]

@@ -116,6 +116,14 @@ material = SubResource("StandardMaterial3D_w7kh3")
 text = "5"
 font_size = 127
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3hyu"]
+albedo_color = Color(3.851815, 3.851815, 3.851815, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_q5onr"]
+material = SubResource("StandardMaterial3D_e3hyu")
+text = "➔"
+font_size = 120
+
 [node name="Floor 5" type="Node3D" unique_id=27969865]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=764723131]
@@ -359,9 +367,9 @@ offset_bottom = 63.0
 text = "WASD to move"
 
 [node name="Label2" type="Label" parent="." unique_id=620480359]
-offset_left = 960.0
+offset_left = 936.0
 offset_top = 8.0
-offset_right = 1145.0
+offset_right = 1121.0
 offset_bottom = 152.0
 theme_override_font_sizes/font_size = 13
 text = "Task: Find one anomaly in all 
@@ -380,8 +388,20 @@ theme_override_font_sizes/font_size = 30
 text = "Floor 5"
 uppercase = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1428256751]
+[node name="Signs" type="Node3D" parent="." unique_id=1283116185]
+
+[node name="Sign" type="MeshInstance3D" parent="Signs" unique_id=1428256751]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65761644, 2.5360255, 5.074716)
 mesh = SubResource("TextMesh_e3hyu")
+
+[node name="Arrows" type="Node3D" parent="." unique_id=451461900]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Arrows" unique_id=611953311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4316378, 2.410929, 15.483801)
+mesh = SubResource("TextMesh_q5onr")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Arrows" unique_id=1694241013]
+transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
+mesh = SubResource("TextMesh_q5onr")
 
 [connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player" method="_on_area_3d_body_entered"]

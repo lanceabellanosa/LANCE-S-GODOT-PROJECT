@@ -1,23 +1,31 @@
 [gd_scene format=3 uid="uid://dvfbgt4cu2h6i"]
 
+[ext_resource type="Script" uid="uid://by12t6vvbeifp" path="res://scripts/player_3.gd" id="1_5p7od"]
 [ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="1_c5a0f"]
 [ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="2_5p7od"]
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="3_1eh0r"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dh3ga"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-energy_multiplier = 1.1
-
-[sub_resource type="Sky" id="Sky_1e6jr"]
-sky_material = SubResource("ProceduralSkyMaterial_dh3ga")
-
 [sub_resource type="Environment" id="Environment_mwruw"]
-sky = SubResource("Sky_1e6jr")
-tonemap_mode = 2
+background_mode = 2
+sky_custom_fov = 59.4
+ambient_light_source = 2
+ambient_light_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
+glow_enabled = true
 fog_enabled = true
-fog_light_energy = 4.45
+fog_light_color = Color(0.92099476, 0.9209946, 0.9209946, 1)
 volumetric_fog_enabled = true
+volumetric_fog_density = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1eh0r"]
+albedo_color = Color(0.45215458, 0.48356074, 0.46393156, 1)
+emission = Color(0.25882354, 0.25882354, 0.25882354, 1)
+emission_energy_multiplier = 3.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_5p7od"]
+height = 3.93
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1eh0r"]
+points = PackedVector3Array(0.48526955, 1.5441561, 0.084717125, -0.5311904, 1.5592794, -0.21925513, 0.2172466, -1.5592794, -0.5311904, 0.34202072, -1.5592794, 0.46679482, -0.34402925, 1.5592794, 0.46679482, 0.2172466, 1.5592794, -0.5311904, -0.34402925, -1.5592794, -0.46880335, 0.46679482, -1.5592794, -0.34402925, -0.4064163, -1.621807, 0.40440777, 0.40440777, 1.621807, 0.40440777, -0.21925513, 1.5592794, -0.5311904, 0.08836628, -1.9084535, -0.20966025, -0.09035249, 1.9080746, -0.2096188, -0.5311904, 1.5592794, 0.2172466, 0.46679482, -1.5592794, 0.34202072, 0.46679482, 1.5592794, -0.34402925, -0.5311904, -1.5592794, -0.21925513, 0.08840372, 1.9092534, 0.20774372, -0.090389974, -1.9088745, 0.20770231, -0.5311904, -1.5592794, 0.2172466, 0.34202072, 1.5592794, 0.46679482, -0.086676925, -1.543434, 0.48504218, -0.21925513, -1.5592794, -0.5311904, -0.46880335, 1.5592794, -0.34402925, 0.32413772, 1.8328396, -0.08960435, 0.32421052, -1.83325, 0.08762107, -0.2096188, -1.9080746, -0.09035249, -0.20966025, 1.9084535, 0.08836628, 0.34202072, 1.5592794, -0.46880335, 0.08471707, 1.5441552, 0.48526928, 0.48504248, -1.543435, -0.08667698, 0.46679482, 1.5592794, 0.34202072)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ldxew"]
 albedo_texture = ExtResource("1_c5a0f")
@@ -77,22 +85,38 @@ size = Vector3(1, 4, 17.94)
 [sub_resource type="BoxMesh" id="BoxMesh_xbxi4"]
 size = Vector3(2, 2, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vae03"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5p7od"]
 albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_m7piy"]
-material = SubResource("StandardMaterial3D_vae03")
+material = SubResource("StandardMaterial3D_5p7od")
 size = Vector3(0.5, 2.5, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ntk7"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dh3ga"]
 albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_phiy3"]
-material = SubResource("StandardMaterial3D_1ntk7")
+material = SubResource("StandardMaterial3D_dh3ga")
 size = Vector3(0.5, 2.5, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4ubai"]
 size = Vector3(0.9925537, 1.8051796, 0.43652344)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1e6jr"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_c5a0f"]
+material = SubResource("StandardMaterial3D_1e6jr")
+text = "4"
+font_size = 127
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mwruw"]
+albedo_color = Color(3.851815, 3.851815, 3.851815, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_5p7od"]
+material = SubResource("StandardMaterial3D_mwruw")
+text = "➔"
+font_size = 120
 
 [node name="Floor 4" type="Node3D" unique_id=2136728317]
 
@@ -102,7 +126,30 @@ environment = SubResource("Environment_mwruw")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1139407174]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
-sky_mode = 1
+sky_mode = 2
+
+[node name="Moon" type="CSGSphere3D" parent="." unique_id=1312627176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1250.1567, 924.228, -2241)
+radius = 147.0
+material = SubResource("StandardMaterial3D_1eh0r")
+
+[node name="player3" type="CharacterBody3D" parent="." unique_id=1238973709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8711486, 9.451281)
+script = ExtResource("1_5p7od")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player3" unique_id=1116952469]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+mesh = SubResource("CapsuleMesh_5p7od")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player3" unique_id=1784769518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+shape = SubResource("ConvexPolygonShape3D_1eh0r")
+
+[node name="head" type="Node3D" parent="player3" unique_id=590019132]
+
+[node name="Camera3D" type="Camera3D" parent="player3/head" unique_id=1803681607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3908286, -0.18396854)
+keep_aspect = 0
 
 [node name="Hallway" type="Node3D" parent="." unique_id=131778713]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 584, 615, -2241)
@@ -302,10 +349,28 @@ mesh = SubResource("BoxMesh_phiy3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014831543, 1.9658883, -0.8047037)
 shape = SubResource("BoxShape3D_4ubai")
 
+[node name="Signs" type="Node3D" parent="Hallway" unique_id=1567490194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+
+[node name="Sign" type="MeshInstance3D" parent="Hallway/Signs" unique_id=88801332]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65761644, 2.5360255, 5.074716)
+mesh = SubResource("TextMesh_c5a0f")
+
+[node name="Arrows" type="Node3D" parent="Hallway" unique_id=415049470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=585250352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4316378, 2.410929, 15.483801)
+mesh = SubResource("TextMesh_5p7od")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=426026698]
+transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
+mesh = SubResource("TextMesh_5p7od")
+
 [node name="Label" type="Label" parent="." unique_id=1834352569]
-offset_left = 960.0
+offset_left = 944.0
 offset_top = 8.0
-offset_right = 1145.0
+offset_right = 1129.0
 offset_bottom = 152.0
 theme_override_font_sizes/font_size = 13
 text = "Task: Find one anomaly in all 
@@ -315,6 +380,7 @@ Head to the elevator where
 the arrows pointing if you
 have or haven't found
 anything."
+metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="." unique_id=1345081956]
 offset_left = 8.0
@@ -324,3 +390,14 @@ offset_bottom = 31.0
 theme_override_font_sizes/font_size = 30
 text = "Floor 4"
 uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="." unique_id=1525592202]
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 306.0
+offset_bottom = 71.0
+text = "Correct: There is no anomaly in Floor 5"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player3" method="_on_area_3d_body_entered"]

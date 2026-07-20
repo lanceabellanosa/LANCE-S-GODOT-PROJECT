@@ -6,12 +6,12 @@
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 
-[sub_resource type="Sky" id="Sky_ami83"]
+[sub_resource type="Sky" id="Sky_jspf7"]
 sky_material = SubResource("ProceduralSkyMaterial_2pex0")
 
 [sub_resource type="Environment" id="Environment_sk5n6"]
 background_mode = 2
-sky = SubResource("Sky_ami83")
+sky = SubResource("Sky_jspf7")
 tonemap_mode = 2
 glow_enabled = true
 fog_enabled = true
@@ -31,21 +31,21 @@ height = 3.93
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ywvty"]
 points = PackedVector3Array(0.48526955, 1.5441561, 0.084717125, -0.5311904, 1.5592794, -0.21925513, 0.2172466, -1.5592794, -0.5311904, 0.34202072, -1.5592794, 0.46679482, -0.34402925, 1.5592794, 0.46679482, 0.2172466, 1.5592794, -0.5311904, -0.34402925, -1.5592794, -0.46880335, 0.46679482, -1.5592794, -0.34402925, -0.4064163, -1.621807, 0.40440777, 0.40440777, 1.621807, 0.40440777, -0.21925513, 1.5592794, -0.5311904, 0.08836628, -1.9084535, -0.20966025, -0.09035249, 1.9080746, -0.2096188, -0.5311904, 1.5592794, 0.2172466, 0.46679482, -1.5592794, 0.34202072, 0.46679482, 1.5592794, -0.34402925, -0.5311904, -1.5592794, -0.21925513, 0.08840372, 1.9092534, 0.20774372, -0.090389974, -1.9088745, 0.20770231, -0.5311904, -1.5592794, 0.2172466, 0.34202072, 1.5592794, 0.46679482, -0.086676925, -1.543434, 0.48504218, -0.21925513, -1.5592794, -0.5311904, -0.46880335, 1.5592794, -0.34402925, 0.32413772, 1.8328396, -0.08960435, 0.32421052, -1.83325, 0.08762107, -0.2096188, -1.9080746, -0.09035249, -0.20966025, 1.9084535, 0.08836628, 0.34202072, 1.5592794, -0.46880335, 0.08471707, 1.5441552, 0.48526928, 0.48504248, -1.543435, -0.08667698, 0.46679482, 1.5592794, 0.34202072)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jspf7"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2pex0"]
 albedo_color = Color(0.7806942, 4.548356e-06, 4.813075e-07, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_2pex0"]
-material = SubResource("StandardMaterial3D_jspf7")
+material = SubResource("StandardMaterial3D_2pex0")
 size = Vector3(10, 0.5, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ami83"]
 size = Vector3(10, 0.5, 10)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sk5n6"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ami83"]
 albedo_color = Color(2.7795509e-06, 0.4400189, 0.023214232, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_1c0pd"]
-material = SubResource("StandardMaterial3D_sk5n6")
+material = SubResource("StandardMaterial3D_ami83")
 size = Vector3(10, 0.5, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ywvty"]
@@ -95,6 +95,7 @@ offset_bottom = 31.0
 text = "Have you found an anomaly in Floor 5?"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="No" type="MeshInstance3D" parent="." unique_id=60226789]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.842725, 0, -10.36819)
