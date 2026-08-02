@@ -78,4 +78,5 @@ func _headbob(time) -> Vector3:
 
 #Elevator
 func _on_area_3d_body_entered(body: Node3D) -> void:
-	get_tree().change_scene_to_file()
+	get_tree().change_scene_to_file("res://scenes/floor_3.tscn")
+	
