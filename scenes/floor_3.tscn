@@ -375,11 +375,10 @@ offset_bottom = 152.0
 theme_override_font_sizes/font_size = 13
 text = "Task: Find one anomaly in all 
 five hallways in order to 
-escape the hotel. 
-Head to the elevator where 
-the arrows pointing if you
-have or haven't found
-anything."
+escape the hotel. Head to the 
+elevator where the arrows 
+pointing if you have or 
+haven't found anything."
 metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="." unique_id=1056286737]
@@ -388,7 +387,7 @@ offset_top = 8.0
 offset_right = 552.0
 offset_bottom = 31.0
 theme_override_font_sizes/font_size = 30
-text = "Floor 4"
+text = "Floor 3"
 uppercase = true
 metadata/_edit_use_anchors_ = true
 
@@ -397,7 +396,7 @@ offset_left = 8.0
 offset_top = 48.0
 offset_right = 306.0
 offset_bottom = 71.0
-text = "Correct: There is no anomaly in Floor 5"
+text = "Correct! The table on the roof is an anomaly"
 metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player5" method="_on_area_3d_body_entered"]

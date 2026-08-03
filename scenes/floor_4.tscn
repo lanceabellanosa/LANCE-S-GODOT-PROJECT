@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="1_c5a0f"]
 [ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="2_5p7od"]
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="3_1eh0r"]
+[ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_1eh0r"]
 
 [sub_resource type="Environment" id="Environment_mwruw"]
 background_mode = 2
@@ -366,6 +367,17 @@ mesh = SubResource("TextMesh_5p7od")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=426026698]
 transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
 mesh = SubResource("TextMesh_5p7od")
+
+[node name="Tables" type="Node3D" parent="Hallway" unique_id=890334626]
+
+[node name="Table" parent="Hallway/Tables" unique_id=388859342 instance=ExtResource("5_1eh0r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -579.0096, -615.1479, 2232.9617)
+
+[node name="Table2" parent="Hallway/Tables" unique_id=1798516239 instance=ExtResource("5_1eh0r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -582.57324, -615.2801, 2246.5989)
+
+[node name="Table3" parent="Hallway/Tables" unique_id=2010560160 instance=ExtResource("5_1eh0r")]
+transform = Transform3D(1, 0, 0, 0, -0.9999978, -0.0021118228, 0, 0.0021118228, -0.9999978, -587.6952, -609.9734, 2223.226)
 
 [node name="Label" type="Label" parent="." unique_id=1834352569]
 offset_left = 944.0
