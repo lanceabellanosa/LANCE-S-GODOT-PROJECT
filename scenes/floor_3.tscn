@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="2_ksuo5"]
 [ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="3_8wtuq"]
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_r4smw"]
+[ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_ksuo5"]
 
 [sub_resource type="Environment" id="Environment_ak2bd"]
 background_mode = 2
@@ -85,36 +86,36 @@ size = Vector3(1, 4, 17.94)
 [sub_resource type="BoxMesh" id="BoxMesh_vb5iy"]
 size = Vector3(2, 2, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vae03"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8wtuq"]
 albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_eggy4"]
-material = SubResource("StandardMaterial3D_vae03")
+material = SubResource("StandardMaterial3D_8wtuq")
 size = Vector3(0.5, 2.5, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ntk7"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r4smw"]
 albedo_color = Color(0.2869472, 0.28246158, 1.4439226e-07, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ls883"]
-material = SubResource("StandardMaterial3D_1ntk7")
+material = SubResource("StandardMaterial3D_r4smw")
 size = Vector3(0.5, 2.5, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hhyhn"]
 size = Vector3(0.9925537, 1.8051796, 0.43652344)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7kh3"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ak2bd"]
 albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_l7ts2"]
-material = SubResource("StandardMaterial3D_w7kh3")
+material = SubResource("StandardMaterial3D_ak2bd")
 text = "3"
 font_size = 127
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3hyu"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j64rs"]
 albedo_color = Color(3.851815, 3.851815, 3.851815, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_7f30t"]
-material = SubResource("StandardMaterial3D_e3hyu")
+material = SubResource("StandardMaterial3D_j64rs")
 text = "➔"
 font_size = 120
 
@@ -366,6 +367,14 @@ mesh = SubResource("TextMesh_7f30t")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=1823413683]
 transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
 mesh = SubResource("TextMesh_7f30t")
+
+[node name="Tables" type="Node3D" parent="Hallway" unique_id=1641211436]
+
+[node name="Table" parent="Hallway/Tables" unique_id=388859342 instance=ExtResource("5_ksuo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -578.84467, -615.146, 2232.7822)
+
+[node name="Table2" parent="Hallway/Tables" unique_id=1765763864 instance=ExtResource("5_ksuo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -595.69946, -615.146, 2227.5916)
 
 [node name="Label" type="Label" parent="." unique_id=1267830573]
 offset_left = 944.0
