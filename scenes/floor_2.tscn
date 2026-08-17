@@ -4,12 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="2_xf3kq"]
 [ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="3_8t8eu"]
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_vogym"]
+[ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_xf3kq"]
 
 [sub_resource type="Environment" id="Environment_7h58g"]
 background_mode = 2
 sky_custom_fov = 59.4
 ambient_light_source = 2
-ambient_light_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
+ambient_light_color = Color(0.06879826, 0.06879829, 0.068798244, 1)
+ambient_light_energy = 3.0
 glow_enabled = true
 fog_enabled = true
 fog_light_color = Color(0.92099476, 0.9209946, 0.9209946, 1)
@@ -107,7 +109,7 @@ albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_w2lqe"]
 material = SubResource("StandardMaterial3D_w7kh3")
-text = "3"
+text = "2"
 font_size = 127
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3hyu"]
@@ -367,6 +369,17 @@ mesh = SubResource("TextMesh_c7i0j")
 transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
 mesh = SubResource("TextMesh_c7i0j")
 
+[node name="Tables" type="Node3D" parent="Hallway" unique_id=1532342267]
+
+[node name="Table" parent="Hallway/Tables" unique_id=388859342 instance=ExtResource("5_xf3kq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -579.0096, -615.1479, 2232.9617)
+
+[node name="Table2" parent="Hallway/Tables" unique_id=2101161408 instance=ExtResource("5_xf3kq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -582.57324, -615.2801, 2246.5989)
+
+[node name="Table3" parent="Hallway/Tables" unique_id=1688478351 instance=ExtResource("5_xf3kq")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -598.0468, -615.2663, 2237.628)
+
 [node name="Label" type="Label" parent="." unique_id=1816442441]
 offset_left = 944.0
 offset_top = 8.0
@@ -387,7 +400,7 @@ offset_top = 8.0
 offset_right = 552.0
 offset_bottom = 31.0
 theme_override_font_sizes/font_size = 30
-text = "Floor 3"
+text = "Floor 2"
 uppercase = true
 metadata/_edit_use_anchors_ = true
 

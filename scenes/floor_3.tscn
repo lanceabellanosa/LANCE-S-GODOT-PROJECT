@@ -40,6 +40,7 @@ size = Vector3(40, 0.5, 40)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ewutq"]
 albedo_texture = ExtResource("3_8wtuq")
 albedo_texture_force_srgb = true
+normal_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xbv5b"]
 size = Vector3(1, 4, 26.55)
@@ -368,13 +369,16 @@ mesh = SubResource("TextMesh_7f30t")
 transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
 mesh = SubResource("TextMesh_7f30t")
 
-[node name="Tables" type="Node3D" parent="Hallway" unique_id=1641211436]
+[node name="Tables" type="Node3D" parent="Hallway" unique_id=948980550]
 
 [node name="Table" parent="Hallway/Tables" unique_id=388859342 instance=ExtResource("5_ksuo5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -578.84467, -615.146, 2232.7822)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -579.0096, -615.1479, 2232.9617)
 
-[node name="Table2" parent="Hallway/Tables" unique_id=1765763864 instance=ExtResource("5_ksuo5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -595.69946, -615.146, 2227.5916)
+[node name="Table2" parent="Hallway/Tables" unique_id=1762085880 instance=ExtResource("5_ksuo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -582.57324, -615.2801, 2246.5989)
+
+[node name="Table3" parent="Hallway/Tables" unique_id=214959293 instance=ExtResource("5_ksuo5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -598.0468, -615.2663, 2237.628)
 
 [node name="Label" type="Label" parent="." unique_id=1267830573]
 offset_left = 944.0
