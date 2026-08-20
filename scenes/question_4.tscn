@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://dnx7rpc22alv7"]
+
+[ext_resource type="Script" uid="uid://o6rbboej1ski" path="res://scenes/player_8.gd" id="1_0gvpj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gmqfj"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_ami83"]
+sky_material = SubResource("ProceduralSkyMaterial_gmqfj")
+
+[sub_resource type="Environment" id="Environment_w8jrx"]
+background_mode = 2
+sky = SubResource("Sky_ami83")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.008048159, 0.00929042, 0.011432825, 1)
+fog_sun_scatter = 0.54
+fog_density = 0.1646
+
+[sub_resource type="BoxMesh" id="BoxMesh_godrg"]
+size = Vector3(20, 0.5, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i561q"]
+size = Vector3(20, 0.5, 10)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_demkq"]
+height = 3.93
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_466on"]
+points = PackedVector3Array(0.48526955, 1.5441561, 0.084717125, -0.5311904, 1.5592794, -0.21925513, 0.2172466, -1.5592794, -0.5311904, 0.34202072, -1.5592794, 0.46679482, -0.34402925, 1.5592794, 0.46679482, 0.2172466, 1.5592794, -0.5311904, -0.34402925, -1.5592794, -0.46880335, 0.46679482, -1.5592794, -0.34402925, -0.4064163, -1.621807, 0.40440777, 0.40440777, 1.621807, 0.40440777, -0.21925513, 1.5592794, -0.5311904, 0.08836628, -1.9084535, -0.20966025, -0.09035249, 1.9080746, -0.2096188, -0.5311904, 1.5592794, 0.2172466, 0.46679482, -1.5592794, 0.34202072, 0.46679482, 1.5592794, -0.34402925, -0.5311904, -1.5592794, -0.21925513, 0.08840372, 1.9092534, 0.20774372, -0.090389974, -1.9088745, 0.20770231, -0.5311904, -1.5592794, 0.2172466, 0.34202072, 1.5592794, 0.46679482, -0.086676925, -1.543434, 0.48504218, -0.21925513, -1.5592794, -0.5311904, -0.46880335, 1.5592794, -0.34402925, 0.32413772, 1.8328396, -0.08960435, 0.32421052, -1.83325, 0.08762107, -0.2096188, -1.9080746, -0.09035249, -0.20966025, 1.9084535, 0.08836628, 0.34202072, 1.5592794, -0.46880335, 0.08471707, 1.5441552, 0.48526928, 0.48504248, -1.543435, -0.08667698, 0.46679482, 1.5592794, 0.34202072)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jspf7"]
+albedo_color = Color(0.7806942, 4.548356e-06, 4.813075e-07, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wucwa"]
+material = SubResource("StandardMaterial3D_jspf7")
+size = Vector3(10, 0.5, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_si6v8"]
+size = Vector3(10, 0.5, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sk5n6"]
+albedo_color = Color(2.7795509e-06, 0.4400189, 0.023214232, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_thuxk"]
+material = SubResource("StandardMaterial3D_sk5n6")
+size = Vector3(10, 0.5, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lj8pi"]
+size = Vector3(10, 0.5, 10)
+
+[node name="question 3" type="Node3D" unique_id=1456516795]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1400281547]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_color = Color(0, 0, 0, 1)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=409464170]
+environment = SubResource("Environment_w8jrx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=23895915]
+mesh = SubResource("BoxMesh_godrg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=1524939339]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1435544815]
+shape = SubResource("BoxShape3D_i561q")
+
+[node name="player8" type="CharacterBody3D" parent="." unique_id=718672690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6509495, 2.0502052)
+script = ExtResource("1_0gvpj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player8" unique_id=2093452071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+mesh = SubResource("CapsuleMesh_demkq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player8" unique_id=926717893]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+shape = SubResource("ConvexPolygonShape3D_466on")
+
+[node name="head" type="Node3D" parent="player8" unique_id=633185686]
+
+[node name="Camera3D" type="Camera3D" parent="player8/head" unique_id=14125594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3908286, -0.18396854)
+keep_aspect = 0
+
+[node name="Label" type="Label" parent="." unique_id=1281900742]
+offset_left = 464.0
+offset_top = 8.0
+offset_right = 812.0
+offset_bottom = 31.0
+text = "Have you found an anomaly in Floor 4?"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="No" type="MeshInstance3D" parent="." unique_id=1156596384]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.842725, 0, -10.36819)
+mesh = SubResource("BoxMesh_wucwa")
+
+[node name="Area3D" type="Area3D" parent="No" unique_id=1861895486]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="No/Area3D" unique_id=1642325738]
+shape = SubResource("BoxShape3D_si6v8")
+
+[node name="Yes" type="MeshInstance3D" parent="." unique_id=1375712979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.428673, 0, -10.489131)
+mesh = SubResource("BoxMesh_thuxk")
+
+[node name="Area3D" type="Area3D" parent="Yes" unique_id=1469301429]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Yes/Area3D" unique_id=1281202251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.1757164)
+shape = SubResource("BoxShape3D_lj8pi")
+
+[connection signal="body_entered" from="No/Area3D" to="player8" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Yes/Area3D" to="player8" method="_on_area_3d_body_entered"]
+[connection signal="body_shape_entered" from="Yes/Area3D" to="player8" method="_on_area_3d_body_shape_entered"]
