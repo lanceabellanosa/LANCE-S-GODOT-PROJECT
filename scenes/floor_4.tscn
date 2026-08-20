@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="2_5p7od"]
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="3_1eh0r"]
 [ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_1eh0r"]
+[ext_resource type="PackedScene" uid="uid://cmrbw13lu7lda" path="res://scenes/portrait_2.tscn" id="6_dh3ga"]
 
 [sub_resource type="Environment" id="Environment_mwruw"]
 background_mode = 2
@@ -378,6 +379,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -582.57324, -615.2801, 2246.5
 
 [node name="Table3" parent="Hallway/Tables" unique_id=2010560160 instance=ExtResource("5_1eh0r")]
 transform = Transform3D(1, 0, 0, 0, -0.9999978, -0.0021118228, 0, 0.0021118228, -0.9999978, -587.6952, -609.9734, 2223.226)
+
+[node name="Portrait" type="Node3D" parent="Hallway" unique_id=1014637072]
+
+[node name="Portrait_2" parent="Hallway/Portrait" unique_id=2069959553 instance=ExtResource("6_dh3ga")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -570.919, -613.9477, 2241.377)
 
 [node name="Label" type="Label" parent="." unique_id=1834352569]
 offset_left = 944.0

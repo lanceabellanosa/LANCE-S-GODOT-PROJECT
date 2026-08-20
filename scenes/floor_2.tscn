@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="3_8t8eu"]
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_vogym"]
 [ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_xf3kq"]
+[ext_resource type="PackedScene" uid="uid://taanhp6qxerp" path="res://scenes/portrait.tscn" id="6_8t8eu"]
 
 [sub_resource type="Environment" id="Environment_7h58g"]
 background_mode = 2
@@ -380,6 +381,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -582.57324, -615.2801, 2246.5
 [node name="Table3" parent="Hallway/Tables" unique_id=1688478351 instance=ExtResource("5_xf3kq")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -598.0468, -615.2663, 2237.628)
 
+[node name="Portrait" type="Node3D" parent="Hallway" unique_id=1685518498]
+
+[node name="Portrait" parent="Hallway/Portrait" unique_id=2069959553 instance=ExtResource("6_8t8eu")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -570.919, -613.9477, 2241.377)
+
 [node name="Label" type="Label" parent="." unique_id=1816442441]
 offset_left = 944.0
 offset_top = 8.0
@@ -409,5 +415,5 @@ offset_left = 8.0
 offset_top = 48.0
 offset_right = 306.0
 offset_bottom = 71.0
-text = "Correct! The table on the roof is an anomaly"
+text = "Correct! There is no anomaly in Floor 3"
 metadata/_edit_use_anchors_ = true

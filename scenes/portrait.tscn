@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://taanhp6qxerp"]
 
-[ext_resource type="Texture2D" uid="uid://bcagbape48ghc" path="res://Screenshot 2026-08-18 102445.png" id="1_mdiga"]
+[ext_resource type="Texture2D" uid="uid://bwncdxxfc434d" path="res://textures/Screenshot 2026-08-20 123556.png" id="1_k07cr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj88p"]
+albedo_texture = ExtResource("1_k07cr")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n3ove"]
+load_path = "res://.godot/imported/Screenshot 2026-08-18 102445.png-36771d213b3b5fb9229671b9f060fda6.s3tc.ctex"
 
 [sub_resource type="ORMMaterial3D" id="ORMMaterial3D_fj88p"]
-albedo_texture = ExtResource("1_mdiga")
+albedo_texture = SubResource("CompressedTexture2D_n3ove")
 
 [sub_resource type="BoxMesh" id="BoxMesh_n3ove"]
 material = SubResource("ORMMaterial3D_fj88p")
@@ -30,6 +36,7 @@ size = Vector3(3.5, 0.2, 0.2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1167131864]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7930622, 2.692582, -0.010824561)
+material_override = SubResource("StandardMaterial3D_fj88p")
 mesh = SubResource("BoxMesh_n3ove")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=914114370]
