@@ -417,3 +417,5 @@ offset_right = 306.0
 offset_bottom = 71.0
 text = "Correct! There is no anomaly in Floor 3"
 metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player7" method="_on_area_3d_body_entered"]

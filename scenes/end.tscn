@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://csovh1ty8r2wn"]
+
+[node name="Node2D" type="Node2D" unique_id=599430005]
+
+[node name="Label" type="Label" parent="." unique_id=2106289731]
+offset_left = 504.0
+offset_top = 256.0
+offset_right = 647.0
+offset_bottom = 279.0
+text = "Thanks for Playing"

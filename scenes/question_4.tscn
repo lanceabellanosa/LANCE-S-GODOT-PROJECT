@@ -117,5 +117,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.1757164)
 shape = SubResource("BoxShape3D_lj8pi")
 
 [connection signal="body_entered" from="No/Area3D" to="player8" method="_on_area_3d_body_entered"]
+[connection signal="body_shape_entered" from="No/Area3D" to="player8" method="_on_area_3d_body_shape_entered"]
 [connection signal="body_entered" from="Yes/Area3D" to="player8" method="_on_area_3d_body_entered"]
 [connection signal="body_shape_entered" from="Yes/Area3D" to="player8" method="_on_area_3d_body_shape_entered"]
