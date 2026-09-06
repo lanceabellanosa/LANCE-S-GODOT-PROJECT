@@ -2,7 +2,7 @@ extends Node2D
 
 var button_type = null
 
-func _on_play_pressed() -> void:
+func _on_button_pressed() -> void:
 	button_type = "play"
 	$ColorRect.show()
 	$"ColorRect/fade_timer".start()
