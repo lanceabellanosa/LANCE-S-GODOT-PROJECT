@@ -11,10 +11,10 @@
 background_mode = 2
 sky_custom_fov = 59.4
 ambient_light_source = 2
-ambient_light_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
+ambient_light_color = Color(0.13319641, 0.13319641, 0.13319635, 1)
 glow_enabled = true
 fog_enabled = true
-fog_light_color = Color(0.92099476, 0.9209946, 0.9209946, 1)
+fog_light_color = Color(0.60122335, 0.6012228, 0.60122305, 1)
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.5
 
