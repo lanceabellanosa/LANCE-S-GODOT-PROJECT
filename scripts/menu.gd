@@ -12,3 +12,7 @@ func _on_button_pressed() -> void:
 func _on_fade_timer_timeout() -> void:
 	if button_type == "play":
 		get_tree().change_scene_to_file("res://scenes/floor_5.tscn")
+
+
+func _on_rules_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/rules.tscn")

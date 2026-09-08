@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bn2e77caglph5"]
+
+[ext_resource type="Script" uid="uid://2f5n7d1ilxu7" path="res://scenes/rules.gd" id="1_3spy8"]
+
+[node name="rules" type="Node2D" unique_id=1119519023]
+script = ExtResource("1_3spy8")
+
+[node name="Button" type="Button" parent="." unique_id=1200727722]
+offset_left = 496.0
+offset_top = 384.0
+offset_right = 656.0
+offset_bottom = 448.0
+text = "Main Menu"
+
+[node name="Label" type="Label" parent="." unique_id=1763793286]
+offset_left = 48.0
+offset_top = 128.0
+offset_right = 1105.0
+offset_bottom = 229.0
+text = "Objective: 
+Carefully observe your surroundings by walking around the hallway
+Spot any abnormal changes (anomalies)
+And head to the elevator where the arrows are pointing and make the correct decisions to reach the final level without triggering a reset."
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://dpvtwaj1jovrb"]
 
-[ext_resource type="Script" uid="uid://c5fb3hfcf34xl" path="res://scenes/floor_5.gd" id="1_8xrq2"]
+[ext_resource type="Script" uid="uid://c5fb3hfcf34xl" path="res://scripts/floor_5.gd" id="1_8xrq2"]
 [ext_resource type="Script" uid="uid://ccakgjext8n27" path="res://scripts/player.gd" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="2_4wyf3"]
 [ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="3_k0juu"]
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_k0juu"]
 [ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://cmrbw13lu7lda" path="res://scenes/portrait_2.tscn" id="6_drvl3"]
-[ext_resource type="PackedScene" uid="uid://cxrwwmbfw7giy" path="res://transition.tscn" id="8_8aavq"]
+[ext_resource type="PackedScene" uid="uid://cxrwwmbfw7giy" path="res://scenes/transition.tscn" id="8_8aavq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k0juu"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -382,22 +382,21 @@ offset_left = 8.0
 offset_top = 40.0
 offset_right = 136.0
 offset_bottom = 63.0
-text = "WASD to move
+text = "W to move forward
+
 Mouse to look around"
 
 [node name="Label2" type="Label" parent="." unique_id=620480359]
-offset_left = 936.0
+offset_left = 656.0
 offset_top = 8.0
-offset_right = 1121.0
-offset_bottom = 152.0
+offset_right = 1144.0
+offset_bottom = 110.0
 theme_override_font_sizes/font_size = 13
-text = "Task: Find one anomaly in all 
-five hallways in order to 
-escape the hotel. 
-Head to the elevator where 
-the arrows pointing if you
-have or haven't found
-anything."
+text = "Objective: carefully observe your surroundings by walking around the hallway
+Spot any abnormal changes (anomalies)
+And head to the elevator where the arrows are pointing and make the 
+correct decisions to reach the final level without triggering a reset.
+"
 
 [node name="Label3" type="Label" parent="." unique_id=479735766]
 offset_left = 8.0

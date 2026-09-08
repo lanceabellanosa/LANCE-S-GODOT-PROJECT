@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bh1yq66pbqq01" path="res://scripts/menu.gd" id="1_yqeox"]
 [ext_resource type="Texture2D" uid="uid://dvnbqat7fr8nv" path="res://textures/Screenshot 2026-07-01 115320.png" id="2_vjb58"]
-[ext_resource type="PackedScene" uid="uid://cxrwwmbfw7giy" path="res://transition.tscn" id="3_con2f"]
+[ext_resource type="PackedScene" uid="uid://cxrwwmbfw7giy" path="res://scenes/transition.tscn" id="3_con2f"]
 
 [node name="Menu" type="Node2D" unique_id=1589856008]
 script = ExtResource("1_yqeox")
@@ -14,10 +14,17 @@ texture = ExtResource("2_vjb58")
 
 [node name="play" type="Button" parent="." unique_id=1255383464]
 offset_left = 448.0
-offset_top = 384.0
+offset_top = 256.0
 offset_right = 704.0
-offset_bottom = 448.0
+offset_bottom = 320.0
 text = "Play Now"
+
+[node name="rules" type="Button" parent="." unique_id=1103049049]
+offset_left = 448.0
+offset_top = 352.0
+offset_right = 704.0
+offset_bottom = 416.0
+text = "Rules"
 
 [node name="Label" type="Label" parent="." unique_id=1106585095]
 offset_left = -280.0
@@ -37,4 +44,6 @@ visible = false
 [node name="fade_timer" type="Timer" parent="ColorRect" unique_id=446598037]
 
 [connection signal="pressed" from="play" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="rules" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="rules" to="." method="_on_rules_pressed"]
 [connection signal="timeout" from="ColorRect/fade_timer" to="." method="_on_fade_timer_timeout"]

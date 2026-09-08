@@ -1,11 +1,11 @@
-[gd_scene format=3 uid="uid://h2coakxb47ur"]
+[gd_scene format=3 uid="uid://bfholjfhcx56f"]
 
-[ext_resource type="Script" uid="uid://ddp8oi1ogs58t" path="res://scripts/player_7.gd" id="1_6ib5v"]
-[ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="2_xf3kq"]
-[ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="3_8t8eu"]
-[ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_vogym"]
-[ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_xf3kq"]
-[ext_resource type="PackedScene" uid="uid://taanhp6qxerp" path="res://scenes/portrait.tscn" id="6_8t8eu"]
+[ext_resource type="Script" uid="uid://f8q5v7avlh8i" path="res://scripts/player_9.gd" id="1_2mdf6"]
+[ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="2_xtmew"]
+[ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="3_31hr6"]
+[ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_7x2hd"]
+[ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_pkyk8"]
+[ext_resource type="PackedScene" uid="uid://taanhp6qxerp" path="res://scenes/portrait.tscn" id="6_y1s0d"]
 
 [sub_resource type="Environment" id="Environment_7h58g"]
 background_mode = 2
@@ -31,7 +31,7 @@ height = 3.93
 points = PackedVector3Array(0.48526955, 1.5441561, 0.084717125, -0.5311904, 1.5592794, -0.21925513, 0.2172466, -1.5592794, -0.5311904, 0.34202072, -1.5592794, 0.46679482, -0.34402925, 1.5592794, 0.46679482, 0.2172466, 1.5592794, -0.5311904, -0.34402925, -1.5592794, -0.46880335, 0.46679482, -1.5592794, -0.34402925, -0.4064163, -1.621807, 0.40440777, 0.40440777, 1.621807, 0.40440777, -0.21925513, 1.5592794, -0.5311904, 0.08836628, -1.9084535, -0.20966025, -0.09035249, 1.9080746, -0.2096188, -0.5311904, 1.5592794, 0.2172466, 0.46679482, -1.5592794, 0.34202072, 0.46679482, 1.5592794, -0.34402925, -0.5311904, -1.5592794, -0.21925513, 0.08840372, 1.9092534, 0.20774372, -0.090389974, -1.9088745, 0.20770231, -0.5311904, -1.5592794, 0.2172466, 0.34202072, 1.5592794, 0.46679482, -0.086676925, -1.543434, 0.48504218, -0.21925513, -1.5592794, -0.5311904, -0.46880335, 1.5592794, -0.34402925, 0.32413772, 1.8328396, -0.08960435, 0.32421052, -1.83325, 0.08762107, -0.2096188, -1.9080746, -0.09035249, -0.20966025, 1.9084535, 0.08836628, 0.34202072, 1.5592794, -0.46880335, 0.08471707, 1.5441552, 0.48526928, 0.48504248, -1.543435, -0.08667698, 0.46679482, 1.5592794, 0.34202072)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dn0rh"]
-albedo_texture = ExtResource("2_xf3kq")
+albedo_texture = ExtResource("2_xtmew")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hoadi"]
 size = Vector3(40, 0.5, 40)
@@ -40,25 +40,25 @@ size = Vector3(40, 0.5, 40)
 size = Vector3(40, 0.5, 40)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6asnv"]
-albedo_texture = ExtResource("3_8t8eu")
+albedo_texture = ExtResource("3_31hr6")
 albedo_texture_force_srgb = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fww25"]
 size = Vector3(1, 4, 26.55)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vidrn"]
-albedo_texture = ExtResource("3_8t8eu")
+albedo_texture = ExtResource("3_31hr6")
 albedo_texture_force_srgb = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1qdjp"]
 size = Vector3(1, 4, 12.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kxgs6"]
-albedo_texture = ExtResource("3_8t8eu")
+albedo_texture = ExtResource("3_31hr6")
 albedo_texture_force_srgb = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0l1lh"]
-albedo_texture = ExtResource("3_8t8eu")
+albedo_texture = ExtResource("3_31hr6")
 albedo_texture_force_srgb = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dk70e"]
@@ -105,12 +105,12 @@ size = Vector3(0.5, 2.5, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_qw7w4"]
 size = Vector3(0.9925537, 1.8051796, 0.43652344)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7kh3"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o5kxv"]
 albedo_color = Color(0, 0, 0, 1)
 
-[sub_resource type="TextMesh" id="TextMesh_w2lqe"]
-material = SubResource("StandardMaterial3D_w7kh3")
-text = "2"
+[sub_resource type="TextMesh" id="TextMesh_l0cd7"]
+material = SubResource("StandardMaterial3D_o5kxv")
+text = "1"
 font_size = 127
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3hyu"]
@@ -121,7 +121,7 @@ material = SubResource("StandardMaterial3D_e3hyu")
 text = "➔"
 font_size = 120
 
-[node name="floor 2" type="Node3D" unique_id=914654271]
+[node name="floor 1" type="Node3D" unique_id=914654271]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1969399116]
 environment = SubResource("Environment_7h58g")
@@ -136,21 +136,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1250.1567, 924.228, -2241)
 radius = 147.0
 material = SubResource("StandardMaterial3D_2aqei")
 
-[node name="player7" type="CharacterBody3D" parent="." unique_id=538038826]
+[node name="player9" type="CharacterBody3D" parent="." unique_id=538038826]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8711486, 9.451281)
-script = ExtResource("1_6ib5v")
+script = ExtResource("1_2mdf6")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="player7" unique_id=1777303476]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player9" unique_id=1777303476]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
 mesh = SubResource("CapsuleMesh_13ro5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="player7" unique_id=1678669690]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player9" unique_id=1678669690]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
 shape = SubResource("ConvexPolygonShape3D_iufnr")
 
-[node name="head" type="Node3D" parent="player7" unique_id=1524090100]
+[node name="head" type="Node3D" parent="player9" unique_id=1524090100]
 
-[node name="Camera3D" type="Camera3D" parent="player7/head" unique_id=616217543]
+[node name="Camera3D" type="Camera3D" parent="player9/head" unique_id=616217543]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3908286, -0.18396854)
 keep_aspect = 0
 
@@ -294,37 +294,37 @@ shape = SubResource("BoxShape3D_wemkw")
 [node name="Doors" type="Node3D" parent="Hallway" unique_id=1788214894]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
 
-[node name="Door" parent="Hallway/Doors" unique_id=1394904511 instance=ExtResource("4_vogym")]
+[node name="Door" parent="Hallway/Doors" unique_id=1394904511 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -17.170887, 0.54455566, 15.599757)
 
-[node name="Door2" parent="Hallway/Doors" unique_id=761057409 instance=ExtResource("4_vogym")]
+[node name="Door2" parent="Hallway/Doors" unique_id=761057409 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -19.049591, 0.54455566, 8.395555)
 
-[node name="Door3" parent="Hallway/Doors" unique_id=1138288926 instance=ExtResource("4_vogym")]
+[node name="Door3" parent="Hallway/Doors" unique_id=1138288926 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -19.049591, 0.54455566, -5.384404)
 
-[node name="Door4" parent="Hallway/Doors" unique_id=1609470471 instance=ExtResource("4_vogym")]
+[node name="Door4" parent="Hallway/Doors" unique_id=1609470471 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -19.049591, 0.54455566, -17.918045)
 
-[node name="Door5" parent="Hallway/Doors" unique_id=31070711 instance=ExtResource("4_vogym")]
+[node name="Door5" parent="Hallway/Doors" unique_id=31070711 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.463988, 0.54455566, -22.510406)
 
-[node name="Door6" parent="Hallway/Doors" unique_id=302169365 instance=ExtResource("4_vogym")]
+[node name="Door6" parent="Hallway/Doors" unique_id=302169365 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.6576686, 0.54455566, -22.510406)
 
-[node name="Door7" parent="Hallway/Doors" unique_id=1445849267 instance=ExtResource("4_vogym")]
+[node name="Door7" parent="Hallway/Doors" unique_id=1445849267 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 18.837408, 0.54455566, -17.09575)
 
-[node name="Door8" parent="Hallway/Doors" unique_id=1419763639 instance=ExtResource("4_vogym")]
+[node name="Door8" parent="Hallway/Doors" unique_id=1419763639 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 18.837408, 0.54455566, -2.9795027)
 
-[node name="Door9" parent="Hallway/Doors" unique_id=510973577 instance=ExtResource("4_vogym")]
+[node name="Door9" parent="Hallway/Doors" unique_id=510973577 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 18.837408, 0.54455566, 14.512916)
 
-[node name="Door10" parent="Hallway/Doors" unique_id=552121538 instance=ExtResource("4_vogym")]
+[node name="Door10" parent="Hallway/Doors" unique_id=552121538 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5, 13.969175, 0.54455566, 15.575274)
 
-[node name="Door11" parent="Hallway/Doors" unique_id=1359126258 instance=ExtResource("4_vogym")]
+[node name="Door11" parent="Hallway/Doors" unique_id=1359126258 instance=ExtResource("4_7x2hd")]
 transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5, -8.614477, 0.54455566, 5.0418615)
 
 [node name="Elevator" type="Node3D" parent="Hallway" unique_id=698902697]
@@ -356,8 +356,8 @@ shape = SubResource("BoxShape3D_qw7w4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
 
 [node name="Sign" type="MeshInstance3D" parent="Hallway/Signs" unique_id=946888487]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65761644, 2.5360255, 5.074716)
-mesh = SubResource("TextMesh_w2lqe")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65761644, 2.5360255, 5.0676665)
+mesh = SubResource("TextMesh_l0cd7")
 
 [node name="Arrows" type="Node3D" parent="Hallway" unique_id=1250259612]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
@@ -372,30 +372,32 @@ mesh = SubResource("TextMesh_c7i0j")
 
 [node name="Tables" type="Node3D" parent="Hallway" unique_id=1532342267]
 
-[node name="Table" parent="Hallway/Tables" unique_id=388859342 instance=ExtResource("5_xf3kq")]
+[node name="Table" parent="Hallway/Tables" unique_id=388859342 instance=ExtResource("5_pkyk8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -579.0096, -615.1479, 2232.9617)
 
-[node name="Table2" parent="Hallway/Tables" unique_id=2101161408 instance=ExtResource("5_xf3kq")]
+[node name="Table2" parent="Hallway/Tables" unique_id=2101161408 instance=ExtResource("5_pkyk8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -582.57324, -615.2801, 2246.5989)
 
-[node name="Table3" parent="Hallway/Tables" unique_id=1688478351 instance=ExtResource("5_xf3kq")]
+[node name="Table3" parent="Hallway/Tables" unique_id=1688478351 instance=ExtResource("5_pkyk8")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -598.0468, -615.2663, 2237.628)
 
 [node name="Portrait" type="Node3D" parent="Hallway" unique_id=1685518498]
 
-[node name="Portrait" parent="Hallway/Portrait" unique_id=2069959553 instance=ExtResource("6_8t8eu")]
+[node name="Portrait" parent="Hallway/Portrait" unique_id=2069959553 instance=ExtResource("6_y1s0d")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -570.919, -613.9477, 2241.377)
 
 [node name="Label" type="Label" parent="." unique_id=1816442441]
-offset_left = 648.0
+offset_left = 944.0
 offset_top = 8.0
-offset_right = 1136.0
+offset_right = 1129.0
 offset_bottom = 152.0
 theme_override_font_sizes/font_size = 13
-text = "Objective: carefully observe your surroundings by walking around the hallway
-Spot any abnormal changes (anomalies)
-And head to the elevator where the arrows are pointing and make the 
-correct decisions to reach the final level without triggering a reset."
+text = "Task: Find one anomaly in all 
+five hallways in order to 
+escape the hotel. Head to the 
+elevator where the arrows 
+pointing if you have or 
+haven't found anything."
 metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="." unique_id=393390877]
@@ -404,8 +406,8 @@ offset_top = 8.0
 offset_right = 552.0
 offset_bottom = 31.0
 theme_override_font_sizes/font_size = 30
-text = "Floor 2"
+text = "Floor 1"
 uppercase = true
 metadata/_edit_use_anchors_ = true
 
-[connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player7" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player9" method="_on_area_3d_body_entered"]
