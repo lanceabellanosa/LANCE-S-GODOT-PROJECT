@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ccr6d75rwrlln"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qtsov"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xbsf0"]
+material = SubResource("StandardMaterial3D_qtsov")
+height = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60o0r"]
+albedo_color = Color(0.65882355, 0, 0, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_e6m2j"]
+material = SubResource("StandardMaterial3D_60o0r")
+text = "O"
+font_size = 127
+
+[sub_resource type="TorusMesh" id="TorusMesh_hrmh8"]
+inner_radius = 0.001
+outer_radius = 0.904
+ring_segments = 9
+
+[node name="eye" type="Node3D" unique_id=1077085871]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1862346700]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.6490477, 0)
+mesh = SubResource("CylinderMesh_xbsf0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1899367845]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6866072, 0.08806616)
+mesh = SubResource("TextMesh_e6m2j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1029275840]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.6607338, -0.36484027)
+mesh = SubResource("TorusMesh_hrmh8")

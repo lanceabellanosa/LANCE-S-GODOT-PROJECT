@@ -377,13 +377,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -595.69946, -615.146, 2227.59
 [node name="Portrait_2" parent="Hallway/Portrait" unique_id=2069959553 instance=ExtResource("6_drvl3")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -570.919, -613.9477, 2241.377)
 
+[node name="Signs" type="Node3D" parent="Hallway" unique_id=1283116185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+
+[node name="Sign" type="MeshInstance3D" parent="Hallway/Signs" unique_id=1428256751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65761644, 2.5360255, 5.074716)
+mesh = SubResource("TextMesh_e3hyu")
+
+[node name="Arrows" type="Node3D" parent="Hallway" unique_id=451461900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=611953311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4316378, 2.410929, 15.483801)
+mesh = SubResource("TextMesh_q5onr")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=1694241013]
+transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
+mesh = SubResource("TextMesh_q5onr")
+
 [node name="Label" type="Label" parent="." unique_id=187869392]
 offset_left = 8.0
 offset_top = 40.0
 offset_right = 136.0
 offset_bottom = 63.0
 text = "W to move forward
-
+S to move backward
 Mouse to look around"
 
 [node name="Label2" type="Label" parent="." unique_id=620480359]
@@ -405,22 +423,6 @@ offset_bottom = 42.0
 theme_override_font_sizes/font_size = 30
 text = "Floor 5"
 uppercase = true
-
-[node name="Signs" type="Node3D" parent="." unique_id=1283116185]
-
-[node name="Sign" type="MeshInstance3D" parent="Signs" unique_id=1428256751]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65761644, 2.5360255, 5.074716)
-mesh = SubResource("TextMesh_e3hyu")
-
-[node name="Arrows" type="Node3D" parent="." unique_id=451461900]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Arrows" unique_id=611953311]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4316378, 2.410929, 15.483801)
-mesh = SubResource("TextMesh_q5onr")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Arrows" unique_id=1694241013]
-transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
-mesh = SubResource("TextMesh_q5onr")
 
 [node name="transition" parent="." unique_id=1322208833 instance=ExtResource("8_8aavq")]
 visible = false

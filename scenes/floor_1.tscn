@@ -387,17 +387,15 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -598
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -570.919, -613.9477, 2241.377)
 
 [node name="Label" type="Label" parent="." unique_id=1816442441]
-offset_left = 944.0
+offset_left = 656.0
 offset_top = 8.0
-offset_right = 1129.0
+offset_right = 1144.0
 offset_bottom = 152.0
 theme_override_font_sizes/font_size = 13
-text = "Task: Find one anomaly in all 
-five hallways in order to 
-escape the hotel. Head to the 
-elevator where the arrows 
-pointing if you have or 
-haven't found anything."
+text = "Objective: carefully observe your surroundings by walking around the hallway
+Spot any abnormal changes (anomalies)
+And head to the elevator where the arrows are pointing and make the 
+correct decisions to reach the final level without triggering a reset."
 metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="." unique_id=393390877]
