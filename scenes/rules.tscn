@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://bn2e77caglph5"]
 
 [ext_resource type="Script" uid="uid://2f5n7d1ilxu7" path="res://scripts/rules.gd" id="1_3spy8"]
+[ext_resource type="Texture2D" uid="uid://dvnbqat7fr8nv" path="res://textures/Screenshot 2026-07-01 115320.png" id="2_66h5d"]
 
 [node name="rules" type="Node2D" unique_id=1119519023]
 script = ExtResource("1_3spy8")
+
+[node name="Screenshot20260701115320" type="Sprite2D" parent="." unique_id=1397685736]
+position = Vector2(576, 336)
+scale = Vector2(1.142361, 1.2110827)
+texture = ExtResource("2_66h5d")
 
 [node name="Button" type="Button" parent="." unique_id=1200727722]
 offset_left = 496.0
@@ -17,6 +23,7 @@ offset_left = 48.0
 offset_top = 128.0
 offset_right = 1105.0
 offset_bottom = 229.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Objective: 
 Carefully observe your surroundings by walking around the hallway
 Spot any abnormal changes (anomalies)
