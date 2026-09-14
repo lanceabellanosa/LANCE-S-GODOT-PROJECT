@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://da7q51iytlick"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rvmwt"]
+albedo_color = Color(0.6862745, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r84cs"]
+material = SubResource("StandardMaterial3D_rvmwt")
+size = Vector3(4, 0.2, 0.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2ydn4"]
+size = Vector3(4, 0.2, 0.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0x0p"]
+albedo_color = Color(0.6862745, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wtv3h"]
+material = SubResource("StandardMaterial3D_y0x0p")
+size = Vector3(4, 0.5, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8vcbh"]
+size = Vector3(4, 0.5, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_42p3j"]
+albedo_color = Color(0.6862745, 0, 0, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_07bsf"]
+material = SubResource("StandardMaterial3D_42p3j")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bd5xu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s4tfc"]
+albedo_color = Color(0.25104827, 0.18213972, 0.0311051, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8lkwp"]
+material = SubResource("StandardMaterial3D_s4tfc")
+height = 0.5
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ps0jo"]
+height = 0.5
+
+[node name="Couch" type="Node3D" unique_id=363421745]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1931642448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29453778, -0.1977602)
+mesh = SubResource("BoxMesh_r84cs")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=2030821047]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=691480441]
+shape = SubResource("BoxShape3D_2ydn4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=2014797391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.57878757, -0.39765483)
+mesh = SubResource("BoxMesh_wtv3h")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2" unique_id=2126413514]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D" unique_id=1344869811]
+shape = SubResource("BoxShape3D_8vcbh")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=676196328]
+transform = Transform3D(0.3, 0, 0, 0, -1.3113417e-08, -0.3, 0, 0.3, -1.3113417e-08, -1.947153, 0.4902683, -0.14810836)
+mesh = SubResource("CapsuleMesh_07bsf")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3" unique_id=1775925606]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D" unique_id=358930844]
+shape = SubResource("CapsuleShape3D_bd5xu")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1773584580]
+transform = Transform3D(0.3, 0, 0, 0, -1.3113417e-08, -0.3, 0, 0.3, -1.3113417e-08, 1.9363259, 0.4902683, -0.14810836)
+mesh = SubResource("CapsuleMesh_07bsf")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4" unique_id=1925444701]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D" unique_id=1069445838]
+shape = SubResource("CapsuleShape3D_bd5xu")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=555860045]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -1.8943888, 0.19859928, 0)
+mesh = SubResource("CylinderMesh_8lkwp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D5" unique_id=802406817]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D5/StaticBody3D" unique_id=1493571492]
+shape = SubResource("CylinderShape3D_ps0jo")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="." unique_id=346773613]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -1.8943888, 0.19859928, -0.39167643)
+mesh = SubResource("CylinderMesh_8lkwp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D6" unique_id=1319371879]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D6/StaticBody3D" unique_id=3612112]
+shape = SubResource("CylinderShape3D_ps0jo")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="." unique_id=268676367]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.890376, 0.19859928, -0.39167643)
+mesh = SubResource("CylinderMesh_8lkwp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D7" unique_id=250476393]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D7/StaticBody3D" unique_id=1299808347]
+shape = SubResource("CylinderShape3D_ps0jo")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="." unique_id=694633170]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.890376, 0.19859928, -0.0030735135)
+mesh = SubResource("CylinderMesh_8lkwp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D8" unique_id=878765396]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D8/StaticBody3D" unique_id=1103124384]
+shape = SubResource("CylinderShape3D_ps0jo")
