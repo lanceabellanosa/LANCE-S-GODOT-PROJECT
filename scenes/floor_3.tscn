@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_r4smw"]
 [ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_ksuo5"]
 [ext_resource type="PackedScene" uid="uid://taanhp6qxerp" path="res://scenes/portrait.tscn" id="6_8wtuq"]
+[ext_resource type="PackedScene" uid="uid://3y6wkr0b07e0" path="res://scenes/cupboard.tscn" id="7_r4smw"]
 
 [sub_resource type="Environment" id="Environment_ak2bd"]
 background_mode = 2
@@ -386,6 +387,11 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -598
 
 [node name="Portrait" parent="Hallway/Portrait" unique_id=2069959553 instance=ExtResource("6_8wtuq")]
 transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -570.919, -613.9477, 2241.377)
+
+[node name="Cupboard" type="Node3D" parent="Hallway" unique_id=685585367]
+
+[node name="Cupboard" parent="Hallway/Cupboard" unique_id=860747724 instance=ExtResource("7_r4smw")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -573.41614, -614.427, 2233.2065)
 
 [node name="Label" type="Label" parent="." unique_id=1267830573]
 offset_left = 632.0

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_pkyk8"]
 [ext_resource type="PackedScene" uid="uid://cmrbw13lu7lda" path="res://scenes/portrait_2.tscn" id="6_xtmew"]
 [ext_resource type="PackedScene" uid="uid://ccr6d75rwrlln" path="res://scenes/eye.tscn" id="7_31hr6"]
+[ext_resource type="PackedScene" uid="uid://3y6wkr0b07e0" path="res://scenes/cupboard.tscn" id="8_31hr6"]
 
 [sub_resource type="Environment" id="Environment_7h58g"]
 background_mode = 2
@@ -392,6 +393,11 @@ transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-
 [node name="eye" parent="Hallway/Anomaly" unique_id=1077085871 instance=ExtResource("7_31hr6")]
 transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09, -565.2914, -613.1382, 2222.9927)
 
+[node name="Cupboard" type="Node3D" parent="Hallway" unique_id=1248616378]
+
+[node name="Cupboard" parent="Hallway/Cupboard" unique_id=860747724 instance=ExtResource("8_31hr6")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -573.41614, -614.427, 2233.2065)
+
 [node name="Label" type="Label" parent="." unique_id=1816442441]
 offset_left = 656.0
 offset_top = 8.0
@@ -414,11 +420,11 @@ text = "Floor 1 (Last Floor)"
 uppercase = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Label3" type="Label" parent="." unique_id=1466486340]
+[node name="Label3" type="Label" parent="." unique_id=485218188]
 offset_left = 8.0
 offset_top = 48.0
-offset_right = 48.0
+offset_right = 322.0
 offset_bottom = 71.0
-text = "Correct! There is no anomaly in Floor 2"
+text = "Correct! "
 
 [connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player9" method="_on_area_3d_body_entered"]

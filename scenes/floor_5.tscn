@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://cmrbw13lu7lda" path="res://scenes/portrait_2.tscn" id="6_drvl3"]
 [ext_resource type="PackedScene" uid="uid://cxrwwmbfw7giy" path="res://scenes/transition.tscn" id="8_8aavq"]
+[ext_resource type="PackedScene" uid="uid://3y6wkr0b07e0" path="res://scenes/cupboard.tscn" id="8_aw0k4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k0juu"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -394,6 +395,11 @@ mesh = SubResource("TextMesh_q5onr")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Hallway/Arrows" unique_id=1694241013]
 transform = Transform3D(-0.9996789, 0.025339426, 0, -0.025339426, -0.9996789, 0, 0, 0, 1, 2.1986313, 2.410929, 15.483801)
 mesh = SubResource("TextMesh_q5onr")
+
+[node name="Cupboard" type="Node3D" parent="Hallway" unique_id=378461644]
+
+[node name="Cupboard" parent="Hallway/Cupboard" unique_id=860747724 instance=ExtResource("8_aw0k4")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -573.41614, -614.427, 2233.2065)
 
 [node name="Label" type="Label" parent="." unique_id=187869392]
 offset_left = 8.0
