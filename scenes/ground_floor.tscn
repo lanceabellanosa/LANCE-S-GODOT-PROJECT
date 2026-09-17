@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dkboropcvj2w6"]
 
-[ext_resource type="Script" uid="uid://f8q5v7avlh8i" path="res://scripts/player_9.gd" id="1_8o0ad"]
+[ext_resource type="Script" uid="uid://bn4o1y3nx58bd" path="res://scenes/player_11.gd" id="1_368b0"]
 [ext_resource type="Texture2D" uid="uid://brxd44ac64ria" path="res://textures/WoodFloor019_2K-PNG_Color.png" id="2_5itui"]
 [ext_resource type="Texture2D" uid="uid://bx23fuqpn5d61" path="res://textures/Concrete045_2K-PNG_Color.png" id="3_h42tp"]
 [ext_resource type="PackedScene" uid="uid://dkuujmnk5tps1" path="res://scenes/door.tscn" id="4_368b0"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cmrbw13lu7lda" path="res://scenes/portrait_2.tscn" id="6_g00qy"]
 [ext_resource type="PackedScene" uid="uid://da7q51iytlick" path="res://scenes/couch.tscn" id="7_5itui"]
 [ext_resource type="PackedScene" uid="uid://3y6wkr0b07e0" path="res://scenes/cupboard.tscn" id="8_h42tp"]
+[ext_resource type="PackedScene" uid="uid://cal2dv1h78l4h" path="res://scenes/front_entrance_door.tscn" id="9_368b0"]
 
 [sub_resource type="Environment" id="Environment_n04eu"]
 background_mode = 2
@@ -110,6 +111,8 @@ material = SubResource("StandardMaterial3D_5itui")
 text = "Welcome"
 uppercase = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_2yv3j"]
+
 [node name="ground_floor" type="Node3D" unique_id=293412910]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1892997227]
@@ -125,21 +128,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1250.1567, 924.228, -2241)
 radius = 147.0
 material = SubResource("StandardMaterial3D_nb3uv")
 
-[node name="player9" type="CharacterBody3D" parent="." unique_id=1976537717]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8711486, 9.451281)
-script = ExtResource("1_8o0ad")
+[node name="player11" type="CharacterBody3D" parent="." unique_id=1976537717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8711548, 9.451172)
+script = ExtResource("1_368b0")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="player9" unique_id=2080445769]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player11" unique_id=2080445769]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
 mesh = SubResource("CapsuleMesh_kfe4n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="player9" unique_id=1079782635]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player11" unique_id=1079782635]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
 shape = SubResource("ConvexPolygonShape3D_6f7qn")
 
-[node name="head" type="Node3D" parent="player9" unique_id=747254733]
+[node name="head" type="Node3D" parent="player11" unique_id=747254733]
 
-[node name="Camera3D" type="Camera3D" parent="player9/head" unique_id=1795041133]
+[node name="Camera3D" type="Camera3D" parent="player11/head" unique_id=1795041133]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3908286, -0.18396854)
 keep_aspect = 0
 
@@ -324,6 +327,17 @@ mesh = SubResource("TextMesh_h42tp")
 [node name="Cupboard" parent="groundfloor/Cupboard" unique_id=860747724 instance=ExtResource("8_h42tp")]
 transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, -577.0417, -614.27344, 2256.058)
 
+[node name="front_entrance_door2" type="Node3D" parent="groundfloor" unique_id=1172836712]
+
+[node name="front_entrance_door" parent="groundfloor/front_entrance_door2" unique_id=1694544612 instance=ExtResource("9_368b0")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -585.50635, -614.44385, 2218.5085)
+
+[node name="Area3D" type="Area3D" parent="groundfloor/front_entrance_door2/front_entrance_door" unique_id=924670933]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="groundfloor/front_entrance_door2/front_entrance_door/Area3D" unique_id=1974894619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2486682, 2.3485818, 0)
+shape = SubResource("BoxShape3D_2yv3j")
+
 [node name="Label" type="Label" parent="." unique_id=1964989197]
 offset_left = 832.0
 offset_top = 16.0
@@ -349,3 +363,5 @@ offset_top = 48.0
 offset_right = 322.0
 offset_bottom = 71.0
 text = "Correct! An eyeball on the door"
+
+[connection signal="body_entered" from="groundfloor/front_entrance_door2/front_entrance_door/Area3D" to="player11" method="_on_area_3d_body_entered"]

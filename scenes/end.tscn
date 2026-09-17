@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://csovh1ty8r2wn"]
 
-[node name="Node2D" type="Node2D" unique_id=599430005]
+[ext_resource type="Texture2D" uid="uid://dvnbqat7fr8nv" path="res://textures/Screenshot 2026-07-01 115320.png" id="1_mwn6m"]
 
-[node name="Label" type="Label" parent="." unique_id=2106289731]
-offset_left = 504.0
-offset_top = 256.0
-offset_right = 647.0
-offset_bottom = 279.0
-text = "Thanks for Playing"
+[node name="END" type="Node2D" unique_id=853763702]
+
+[node name="Screenshot20260701115320" type="Sprite2D" parent="." unique_id=1266266811]
+position = Vector2(576, 336)
+scale = Vector2(1.142361, 1.2110827)
+texture = ExtResource("1_mwn6m")
