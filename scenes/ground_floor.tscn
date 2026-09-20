@@ -330,9 +330,10 @@ transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-
 [node name="front_entrance_door2" type="Node3D" parent="groundfloor" unique_id=1172836712]
 
 [node name="front_entrance_door" parent="groundfloor/front_entrance_door2" unique_id=1694544612 instance=ExtResource("9_368b0")]
-transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -585.50635, -614.44385, 2218.5085)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -585.50635, -614.44385, 2218.5085)
 
 [node name="Area3D" type="Area3D" parent="groundfloor/front_entrance_door2/front_entrance_door" unique_id=924670933]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.8308778, 1.0644307, 1.6031227)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="groundfloor/front_entrance_door2/front_entrance_door/Area3D" unique_id=1974894619]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2486682, 2.3485818, 0)

@@ -390,7 +390,7 @@ transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-
 [node name="Cupboard" type="Node3D" parent="Hallway" unique_id=891318736]
 
 [node name="Cupboard" parent="Hallway/Cupboard" unique_id=860747724 instance=ExtResource("7_vogym")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -573.41614, -614.427, 2233.2065)
+transform = Transform3D(0.2920892, 0.068438984, 0, -0.068438984, 0.2920892, 0, 0, 0, 0.29999998, -573.41614, -614.16614, 2233.2065)
 
 [node name="Anomaly" type="Node3D" parent="Hallway" unique_id=1787446727]
 

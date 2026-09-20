@@ -389,7 +389,7 @@ transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-
 [node name="Cupboard" type="Node3D" parent="Hallway" unique_id=136580189]
 
 [node name="Cupboard" parent="Hallway/Cupboard" unique_id=860747724 instance=ExtResource("7_1e6jr")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -573.41614, -614.427, 2233.2065)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -573.41614, -614.427, 2233.2065)
 
 [node name="Label" type="Label" parent="." unique_id=1834352569]
 anchors_preset = -1

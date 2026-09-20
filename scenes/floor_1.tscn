@@ -333,7 +333,7 @@ transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2256.9219)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Hallway/Elevator" unique_id=1189176855]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5024123, -0.11196518)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00032359362, 1.4905632, -0.11647606)
 mesh = SubResource("BoxMesh_17y6c")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Hallway/Elevator" unique_id=614729667]
@@ -349,9 +349,10 @@ transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.05
 mesh = SubResource("BoxMesh_8eknm")
 
 [node name="Area3D" type="Area3D" parent="Hallway/Elevator" unique_id=1131535465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.23216689, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Elevator/Area3D" unique_id=222044057]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014831543, 1.9658883, -0.8047037)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014831543, 1.7746365, -0.8047037)
 shape = SubResource("BoxShape3D_qw7w4")
 
 [node name="Signs" type="Node3D" parent="Hallway" unique_id=286169876]
@@ -396,7 +397,7 @@ transform = Transform3D(-4.371139e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.371139e-09
 [node name="Cupboard" type="Node3D" parent="Hallway" unique_id=1248616378]
 
 [node name="Cupboard" parent="Hallway/Cupboard" unique_id=860747724 instance=ExtResource("8_31hr6")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -573.41614, -614.427, 2233.2065)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -573.41614, -614.427, 2233.2065)
 
 [node name="Label" type="Label" parent="." unique_id=1816442441]
 offset_left = 656.0
@@ -425,6 +426,6 @@ offset_left = 8.0
 offset_top = 48.0
 offset_right = 322.0
 offset_bottom = 71.0
-text = "Correct! "
+text = "Correct! The cupboard stay leaning is an anomaly"
 
 [connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player9" method="_on_area_3d_body_entered"]

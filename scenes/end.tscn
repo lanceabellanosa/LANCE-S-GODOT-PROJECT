@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://csovh1ty8r2wn"]
 
 [ext_resource type="Texture2D" uid="uid://dvnbqat7fr8nv" path="res://textures/Screenshot 2026-07-01 115320.png" id="1_mwn6m"]
+[ext_resource type="AudioStream" uid="uid://bdwm7kdupvceg" path="res://music/Fears to Fathom Ironbark Lookout OST - Credits Music v2 By Tyops.mp3" id="2_3d26k"]
 
 [node name="END" type="Node2D" unique_id=853763702]
 
@@ -8,3 +9,8 @@
 position = Vector2(576, 336)
 scale = Vector2(1.142361, 1.2110827)
 texture = ExtResource("1_mwn6m")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1437738928]
+stream = ExtResource("2_3d26k")
+volume_db = 15.0
+autoplay = true

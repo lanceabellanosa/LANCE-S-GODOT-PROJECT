@@ -399,7 +399,7 @@ mesh = SubResource("TextMesh_q5onr")
 [node name="Cupboard" type="Node3D" parent="Hallway" unique_id=378461644]
 
 [node name="Cupboard" parent="Hallway/Cupboard" unique_id=860747724 instance=ExtResource("8_aw0k4")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -573.41614, -614.427, 2233.2065)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -573.41614, -614.427, 2233.2065)
 
 [node name="Label" type="Label" parent="." unique_id=187869392]
 offset_left = 8.0
