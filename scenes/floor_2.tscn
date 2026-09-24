@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cckgbvs5dthqf" path="res://scenes/table.tscn" id="5_xf3kq"]
 [ext_resource type="PackedScene" uid="uid://cmrbw13lu7lda" path="res://scenes/portrait_2.tscn" id="6_vogym"]
 [ext_resource type="PackedScene" uid="uid://3y6wkr0b07e0" path="res://scenes/cupboard.tscn" id="7_vogym"]
+[ext_resource type="AudioStream" uid="uid://bd784iuvdt5ni" path="res://music/Fears to Fathom - Ironbark Lookout Scary Ambient #4 (Bone Drone) ♪ [Sound Effect].mp3" id="8_7h58g"]
 
 [sub_resource type="Environment" id="Environment_7h58g"]
 background_mode = 2
@@ -390,7 +391,7 @@ transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-
 [node name="Cupboard" type="Node3D" parent="Hallway" unique_id=891318736]
 
 [node name="Cupboard" parent="Hallway/Cupboard" unique_id=860747724 instance=ExtResource("7_vogym")]
-transform = Transform3D(0.2920892, 0.068438984, 0, -0.068438984, 0.2920892, 0, 0, 0, 0.29999998, -573.41614, -614.16614, 2233.2065)
+transform = Transform3D(0.29995742, 0.005052492, 0, -0.005052492, 0.29995742, 0, 0, 0, 0.29999998, -573.41614, -614.16614, 2233.2065)
 
 [node name="Anomaly" type="Node3D" parent="Hallway" unique_id=1787446727]
 
@@ -422,5 +423,10 @@ offset_top = 48.0
 offset_right = 322.0
 offset_bottom = 71.0
 text = "Correct! A Bloody Girl picture is an anomaly"
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=341052210]
+stream = ExtResource("8_7h58g")
+volume_db = 10.0
+autoplay = true
 
 [connection signal="body_entered" from="Hallway/Elevator/Area3D" to="player7" method="_on_area_3d_body_entered"]
