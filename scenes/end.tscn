@@ -13,6 +13,11 @@ position = Vector2(576, 336)
 scale = Vector2(1.142361, 1.2110827)
 texture = ExtResource("1_mwn6m")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1437738928]
+stream = ExtResource("2_3d26k")
+volume_db = 6.0
+autoplay = true
+
 [node name="Label" type="Label" parent="." unique_id=1678468303]
 offset_left = 464.0
 offset_top = 64.0
@@ -56,11 +61,6 @@ offset_top = 512.0
 offset_right = 704.0
 offset_bottom = 576.0
 text = "Play Again"
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1437738928]
-stream = ExtResource("2_3d26k")
-volume_db = 6.0
-autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
