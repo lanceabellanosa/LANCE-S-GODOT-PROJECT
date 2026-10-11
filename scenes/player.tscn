@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dmwu0fbk4blmj"]
+
+[ext_resource type="Script" uid="uid://ccakgjext8n27" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="PackedScene" uid="uid://bryxu5gr5iw6r" path="res://assets/flashlight.glb" id="2_g2els"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_71j4m"]
+height = 3.93
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rwgxs"]
+points = PackedVector3Array(0.48526955, 1.5441561, 0.084717125, -0.5311904, 1.5592794, -0.21925513, 0.2172466, -1.5592794, -0.5311904, 0.34202072, -1.5592794, 0.46679482, -0.34402925, 1.5592794, 0.46679482, 0.2172466, 1.5592794, -0.5311904, -0.34402925, -1.5592794, -0.46880335, 0.46679482, -1.5592794, -0.34402925, -0.4064163, -1.621807, 0.40440777, 0.40440777, 1.621807, 0.40440777, -0.21925513, 1.5592794, -0.5311904, 0.08836628, -1.9084535, -0.20966025, -0.09035249, 1.9080746, -0.2096188, -0.5311904, 1.5592794, 0.2172466, 0.46679482, -1.5592794, 0.34202072, 0.46679482, 1.5592794, -0.34402925, -0.5311904, -1.5592794, -0.21925513, 0.08840372, 1.9092534, 0.20774372, -0.090389974, -1.9088745, 0.20770231, -0.5311904, -1.5592794, 0.2172466, 0.34202072, 1.5592794, 0.46679482, -0.086676925, -1.543434, 0.48504218, -0.21925513, -1.5592794, -0.5311904, -0.46880335, 1.5592794, -0.34402925, 0.32413772, 1.8328396, -0.08960435, 0.32421052, -1.83325, 0.08762107, -0.2096188, -1.9080746, -0.09035249, -0.20966025, 1.9084535, 0.08836628, 0.34202072, 1.5592794, -0.46880335, 0.08471707, 1.5441552, 0.48526928, 0.48504248, -1.543435, -0.08667698, 0.46679482, 1.5592794, 0.34202072)
+
+[node name="player" type="CharacterBody3D" unique_id=68533670]
+script = ExtResource("1_3vyb7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1130250192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+mesh = SubResource("CapsuleMesh_71j4m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1472602013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9923465, 0)
+shape = SubResource("ConvexPolygonShape3D_rwgxs")
+
+[node name="head" type="Node3D" parent="." unique_id=761916763]
+
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=1290349279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3908286, -0.18396854)
+keep_aspect = 0
+
+[node name="Sketchfab_Scene" parent="." unique_id=1271020432 instance=ExtResource("2_g2els")]
+transform = Transform3D(-2.5961123, 0, 9.657133, 0, 9.999999, 0, -9.657133, 0, -2.5961123, 0.41105342, 2.0390756, -0.40032613)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Sketchfab_Scene" unique_id=344606921]
+transform = Transform3D(-0.02414986, 0, -0.09704011, 0, 0.10000002, 0, 0.09704011, 0, -0.02414986, 0.07725778, 0.010997102, 0.03371215)
+light_energy = 10.0
