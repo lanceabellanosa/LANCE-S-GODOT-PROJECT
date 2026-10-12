@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://2f5n7d1ilxu7" path="res://scripts/rules.gd" id="1_3spy8"]
 [ext_resource type="Texture2D" uid="uid://dvnbqat7fr8nv" path="res://textures/Screenshot 2026-07-01 115320.png" id="2_66h5d"]
 [ext_resource type="AudioStream" uid="uid://c6lncjlcev2na" path="res://music/Fears to Fathom - Ironbark Lookout Menu Music ♪ [Sound Effect].mp3" id="3_1m7fe"]
+[ext_resource type="FontFile" uid="uid://8ogtknl3dwlv" path="res://JMH HORROR.ttf" id="3_kpkwe"]
 
 [node name="rules" type="Node2D" unique_id=1119519023]
 script = ExtResource("1_3spy8")
@@ -12,11 +13,13 @@ position = Vector2(576, 336)
 scale = Vector2(1.142361, 1.2110827)
 texture = ExtResource("2_66h5d")
 
-[node name="Button" type="Button" parent="." unique_id=1200727722]
+[node name="mainmenu" type="Button" parent="." unique_id=1200727722]
 offset_left = 496.0
 offset_top = 384.0
 offset_right = 656.0
 offset_bottom = 448.0
+theme_override_fonts/font = ExtResource("3_kpkwe")
+theme_override_font_sizes/font_size = 40
 text = "Main Menu"
 
 [node name="Label" type="Label" parent="." unique_id=1763793286]
@@ -25,6 +28,8 @@ offset_top = 128.0
 offset_right = 1105.0
 offset_bottom = 229.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_kpkwe")
+theme_override_font_sizes/font_size = 20
 text = "Objective: 
 Carefully observe your surroundings by walking around the hallway
 Spot any abnormal changes (anomalies)
@@ -36,4 +41,4 @@ stream = ExtResource("3_1m7fe")
 volume_db = 6.0
 autoplay = true
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="mainmenu" to="." method="_on_button_pressed"]

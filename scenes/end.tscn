@@ -18,20 +18,6 @@ stream = ExtResource("2_3d26k")
 volume_db = 6.0
 autoplay = true
 
-[node name="Button" type="Button" parent="." unique_id=2101805686]
-offset_left = 512.0
-offset_top = 384.0
-offset_right = 704.0
-offset_bottom = 448.0
-text = "Main Menu"
-
-[node name="Button2" type="Button" parent="." unique_id=1119741682]
-offset_left = 512.0
-offset_top = 512.0
-offset_right = 704.0
-offset_bottom = 576.0
-text = "Play Again"
-
 [node name="Label" type="Label" parent="." unique_id=1678468303]
 offset_left = 464.0
 offset_top = 64.0
@@ -62,5 +48,23 @@ text = "Music used from
 Fears To Fathom: Ironbark Lookout"
 horizontal_alignment = 1
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[node name="mainmenu" type="Button" parent="." unique_id=2101805686]
+offset_left = 512.0
+offset_top = 384.0
+offset_right = 704.0
+offset_bottom = 448.0
+theme_override_fonts/font = ExtResource("3_p7m4f")
+theme_override_font_sizes/font_size = 40
+text = "Main Menu"
+
+[node name="playagain" type="Button" parent="." unique_id=1119741682]
+offset_left = 512.0
+offset_top = 512.0
+offset_right = 704.0
+offset_bottom = 576.0
+theme_override_fonts/font = ExtResource("3_p7m4f")
+theme_override_font_sizes/font_size = 40
+text = "Play Again"
+
+[connection signal="pressed" from="mainmenu" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="playagain" to="." method="_on_button_2_pressed"]
