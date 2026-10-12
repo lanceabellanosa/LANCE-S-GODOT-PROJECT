@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://csovh1ty8r2wn"]
 
-[ext_resource type="Script" uid="uid://pstsf7wmlyo6" path="res://scenes/end.gd" id="1_bvfni"]
+[ext_resource type="Script" uid="uid://pstsf7wmlyo6" path="res://scripts/end.gd" id="1_bvfni"]
 [ext_resource type="Texture2D" uid="uid://dvnbqat7fr8nv" path="res://textures/Screenshot 2026-07-01 115320.png" id="1_mwn6m"]
 [ext_resource type="AudioStream" uid="uid://bdwm7kdupvceg" path="res://music/Fears to Fathom Ironbark Lookout OST - Credits Music v2 By Tyops.mp3" id="2_3d26k"]
 [ext_resource type="FontFile" uid="uid://8ogtknl3dwlv" path="res://JMH HORROR.ttf" id="3_p7m4f"]
@@ -17,6 +17,20 @@ texture = ExtResource("1_mwn6m")
 stream = ExtResource("2_3d26k")
 volume_db = 6.0
 autoplay = true
+
+[node name="Button" type="Button" parent="." unique_id=2101805686]
+offset_left = 512.0
+offset_top = 384.0
+offset_right = 704.0
+offset_bottom = 448.0
+text = "Main Menu"
+
+[node name="Button2" type="Button" parent="." unique_id=1119741682]
+offset_left = 512.0
+offset_top = 512.0
+offset_right = 704.0
+offset_bottom = 576.0
+text = "Play Again"
 
 [node name="Label" type="Label" parent="." unique_id=1678468303]
 offset_left = 464.0
@@ -47,20 +61,6 @@ theme_override_font_sizes/font_size = 30
 text = "Music used from
 Fears To Fathom: Ironbark Lookout"
 horizontal_alignment = 1
-
-[node name="Button" type="Button" parent="." unique_id=2101805686]
-offset_left = 512.0
-offset_top = 384.0
-offset_right = 704.0
-offset_bottom = 448.0
-text = "Main Menu"
-
-[node name="Button2" type="Button" parent="." unique_id=1119741682]
-offset_left = 512.0
-offset_top = 512.0
-offset_right = 704.0
-offset_bottom = 576.0
-text = "Play Again"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
