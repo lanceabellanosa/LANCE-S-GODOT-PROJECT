@@ -252,7 +252,7 @@ mesh = SubResource("BoxMesh_p0opx")
 [node name="Tables" type="Node3D" parent="groundfloor" unique_id=193710578]
 
 [node name="Table" parent="groundfloor/Tables" unique_id=388859342 instance=ExtResource("5_2yv3j")]
-transform = Transform3D(0.42804787, 0.25840864, -1.12954e-08, 0, -2.1855694e-08, -0.5, -0.25840864, 0.42804787, -1.8710567e-08, -573.36224, -613.9387, 2232.9617)
+transform = Transform3D(0.42804787, 0.25840864, -1.12954e-08, 0, -2.1855694e-08, -0.5, -0.25840864, 0.42804787, -1.8710567e-08, -573.36224, -614.21234, 2232.9617)
 
 [node name="Table2" parent="groundfloor/Tables" unique_id=1410222253 instance=ExtResource("5_2yv3j")]
 transform = Transform3D(-0.113223635, -0.4870117, 0, 0.4870117, -0.113223635, 0, 0, 0, 0.5, -602.1603, -613.5955, 2241.9875)
@@ -261,7 +261,7 @@ transform = Transform3D(-0.113223635, -0.4870117, 0, 0.4870117, -0.113223635, 0,
 transform = Transform3D(0.16452396, 0, 0.4721566, 0, 0.5, 0, -0.4721566, 0, 0.16452396, -598.0468, -614.8257, 2237.628)
 
 [node name="Table4" parent="groundfloor/Tables" unique_id=640633813 instance=ExtResource("5_2yv3j")]
-transform = Transform3D(0.1277313, -0.48340946, 2.1130498e-08, 0, -2.1855694e-08, -0.5, 0.48340946, 0.1277313, -5.583312e-09, -583.1069, -613.9387, 2241.5518)
+transform = Transform3D(0.1277313, -0.48340946, 2.1130498e-08, 0, -2.1855694e-08, -0.5, 0.48340946, 0.1277313, -5.583312e-09, -583.1069, -614.1973, 2241.5518)
 
 [node name="Table5" parent="groundfloor/Tables" unique_id=600565551 instance=ExtResource("5_2yv3j")]
 transform = Transform3D(2.1855694e-08, 0.5, -7.54979e-08, 0.5, -2.1855694e-08, 0, -3.300118e-15, -7.54979e-08, -0.5, -576.74335, -613.73596, 2241.5518)
@@ -275,10 +275,13 @@ transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
 
 [node name="Couch" parent="groundfloor/Couch" unique_id=363421745 instance=ExtResource("7_5itui")]
-transform = Transform3D(0.9839488, -0.10161278, 0.14669572, -0.024769, -0.8918592, -0.45163456, 0.17672375, 0.4407518, -0.88006055, -4.7962036, 1.1745608, -4.692383)
+transform = Transform3D(0.9842598, -0.080213696, 0.15747525, -0.0011854081, -0.89403796, -0.44799, 0.17672375, 0.44075185, -0.8800607, -4.7962036, 1.1745608, -4.692383)
 
 [node name="Couch2" parent="groundfloor/Couch" unique_id=1919352587 instance=ExtResource("7_5itui")]
 transform = Transform3D(0.685005, 0, 0.7285384, 0, 1, 0, -0.7285384, 0, 0.685005, 9.893127, 0.38323975, -9.667969)
+
+[node name="Couch3" parent="groundfloor/Couch" unique_id=428701027 instance=ExtResource("7_5itui")]
+transform = Transform3D(0.98273253, 0, -0.18503207, 0, 1, 0, 0.18503207, 0, 0.98273253, -6.878603, 0.38323975, -20.118805)
 
 [node name="Welcome" type="Node3D" parent="groundfloor" unique_id=899808837]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584, -615, 2241)
@@ -327,6 +330,12 @@ mesh = SubResource("TextMesh_h42tp")
 
 [node name="Cupboard" parent="groundfloor/Cupboard" unique_id=860747724 instance=ExtResource("8_h42tp")]
 transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, -577.0417, -614.27344, 2256.058)
+
+[node name="Cupboard2" parent="groundfloor/Cupboard" unique_id=1126251697 instance=ExtResource("8_h42tp")]
+transform = Transform3D(0.4, 0, 0, 0, -1.7484556e-08, -0.4, 0, 0.4, -1.7484556e-08, -600.6201, -614.3081, 2244.3376)
+
+[node name="Cupboard3" parent="groundfloor/Cupboard" unique_id=1219153989 instance=ExtResource("8_h42tp")]
+transform = Transform3D(0.32564622, 0, -0.2322812, 0, 0.4, 0, 0.2322812, 0, 0.32564622, -591.576, -614.3081, 2229.8179)
 
 [node name="front_entrance_door2" type="Node3D" parent="groundfloor" unique_id=1172836712]
 
